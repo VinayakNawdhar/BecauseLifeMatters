@@ -97,7 +97,7 @@ header .navbar ul li .user i {
 }
 
 .donate_header{
-    font-family: 
+   
     text-align: center;
 }
 
@@ -140,14 +140,15 @@ header .navbar ul li .user i {
     font-family: 'Archivo Black', sans-serif;
 } */
 .table tr {
-    border: 1px solid black;
+    
     border-spacing:0; 
     border-collapse: collapse;  
+  
   }
 .table tr td{
-    border-spacing:0;
+   
   border-collapse: collapse;
-  border-color: #000;
+  
 }
 .table tr td img{
     display:block; 
@@ -163,9 +164,9 @@ header .navbar ul li .user i {
     
 }
 .btn{
-    background-color: #4CAF50; /* Green */
+    background-color: #5EC576; /* Green */
     border: none;
-    color: white;
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -176,7 +177,7 @@ header .navbar ul li .user i {
 .table tr td h1{
     font-size:x-large;
     text-align: left;
-    color: orange;
+    color: rgb(43, 126, 220);
     
 }
 
