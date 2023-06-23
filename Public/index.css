@@ -717,3 +717,8 @@
   .twitter-handle{
     display: flex;
   }
+
+  .btn a{
+    text-decoration: none;
+    color:#333;
+  }

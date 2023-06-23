@@ -217,6 +217,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 13vh;
   }
   
   .header__title {
