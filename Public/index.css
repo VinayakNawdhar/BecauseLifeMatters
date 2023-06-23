@@ -12,6 +12,7 @@
     --color-tertiary-opacity: #ff58602d;
     --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
     --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+    --gradient-tertiary: linear-gradient(to top left, #121211, #a1a09e);
   }
   
   * {
@@ -132,7 +133,7 @@
   }
   
   .nav__logo {
-    height: 4.5rem;
+    height: 8rem;
     transition: all 0.3s;
   }
   
@@ -182,7 +183,6 @@
   
   .header__title {
     flex: 1;
-  
     max-width: 115rem;
     display: grid;
     grid-template-columns: 3fr 2fr;
