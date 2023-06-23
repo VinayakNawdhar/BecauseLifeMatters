@@ -47,6 +47,17 @@
     opacity: 0;
     transform: translateY(8rem);
   }
+
+  .dropdown-item{
+    /* border: 1px solid black; */
+    background-color: transparent;
+    font-size: 1.5rem;
+    width: 120px;
+    text-align: center;
+  }
+  .dropdown-menu{
+    background: transparent;
+  }
   
   .section__title {
     max-width: 80rem;
@@ -147,6 +158,12 @@
     margin-left: 4rem;
   }
   
+  .btn-danger{
+    color: #333;
+    font-size: large;
+    border: none;
+  }
+
   .nav__link:link,
   .nav__link:visited {
     font-size: 1.7rem;

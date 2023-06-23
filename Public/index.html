@@ -10,7 +10,17 @@
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
       rel="stylesheet"
     />
+<<<<<<< HEAD
     <link rel="stylesheet" href="/Public/index.css" />
+=======
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+>>>>>>> 9ec318cd8a87f8667e6d3d5e2b7ca6355bc8c0a5
     <title>Bankist | When Banking meets Minimalist</title>
     <script defer src="index.js"></script>
   </head>
@@ -18,7 +28,7 @@
     <header class="header">
       <nav class="nav">
         <img
-          src="Images/full_logo.png"
+          src="/Images/full_logo.png"
           alt="Bankist logo"
           class="nav__logo"
           id="logo"
@@ -37,7 +47,21 @@
             <a class="nav__link" href="#section--4">Safe Homes</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#section--5">Medical Supply</a>
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn-danger dropdown-toggle nav__link"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Supplies
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Medical</a></li>
+                <li><a class="dropdown-item" href="#">Grocery</a></li>
+                <li><a class="dropdown-item" href="#">Survival Kit</a></li>
+              </ul>
+            </div>
           </li>
           <li class="nav__item">
             <a class="nav__link nav__link--btn btn--show-modal" href="#"
@@ -67,7 +91,7 @@
 
     <section class="section" id="section--1">
       <div class="section__title">
-        <h2 class="section__description">Features</h2>
+        <h2 class="section__description">News</h2>
         <h3 class="section__header">
           Everything you need in a modern bank and more.
         </h3>
@@ -138,7 +162,7 @@
 
     <section class="section" id="section--2">
       <div class="section__title">
-        <h2 class="section__description">Operations</h2>
+        <h2 class="section__description">Alerts</h2>
         <h3 class="section__header">
           Everything as simple as possible, but no simpler.
         </h3>
@@ -215,7 +239,7 @@
 
     <section class="section" id="section--3">
       <div class="section__title section__title--testimonials">
-        <h2 class="section__description">Not sure yet?</h2>
+        <h2 class="section__description">Volunteers</h2>
         <h3 class="section__header">
           Millions of Bankists are already making their lifes simpler.
         </h3>
@@ -288,8 +312,7 @@
         <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div> -->
         <button class="slider__btn slider__btn--left">&larr;</button>
         <button class="slider__btn slider__btn--right">&rarr;</button>
-        <div class="dots">
-        </div>
+        <div class="dots"></div>
       </div>
     </section>
 
@@ -335,7 +358,8 @@
           target="_blank"
           href="https://www.linkedin.com/in/vinayaknawdhar/"
           >Vinayak Nawdhar</a
-        > . Thanks for reading till end bud!
+        >
+        . Thanks for reading till end bud!
       </p>
     </footer>
 
@@ -357,6 +381,10 @@
     </div>
     <div class="overlay hidden"></div>
 
-    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
