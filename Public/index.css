@@ -214,6 +214,8 @@
   .highlight {
     position: relative;
   }
+
+
   
   .highlight::after {
     display: block;
@@ -550,7 +552,7 @@
   /* FOOTER */
   .footer {
     padding: 10rem 3rem;
-    background-color: #37383d;
+    background-color: whitesmoke;
   }
   
   .footer__nav {
@@ -566,12 +568,12 @@
   
   .footer__link {
     font-size: 1.6rem;
-    color: #eee;
+    color: black;
     text-decoration: none;
   }
   
   .footer__logo {
-    height: 5rem;
+    height: 20rem;
     display: block;
     margin: 0 auto;
     margin-bottom: 5rem;
