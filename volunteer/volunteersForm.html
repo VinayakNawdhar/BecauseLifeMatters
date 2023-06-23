@@ -37,7 +37,7 @@
 
 <h1>VOLUNTEER FORM</h1>
 
-  <form action="javascript:sendmail()" method="post">
+  <form onsubmit="sendEmail();  return false">
 
     <div class="contentform">
       <div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
@@ -153,45 +153,26 @@
  
 <script>  
 
-     function sendmail(){
-    
-			var name = $('#Name').val();
-			var email = $('#email').val();
-			var number = $('#number').val();
-            var skills = $('#skills').val();
-            var address = $('#address').val();
-            var data1 = $('#data1').val();
-            var data2 = $('#data2').val();
-
-
-			var Body='Name: '+' '+name+'<br>Email: '+' '+email+'<br>Contact No.: '+' '+number+'<br>Skills: '+' '+skills+'<br>Address: '+' '+address+'<br>Tell us About Yourself: '+' '+data1+'<br>What you can do for us?: '+' '+data2;
-
+      const btnFinal = document.querySelector(".bouton-contact");
+      e.addEventListener("click",function(e){
+        e.preventDefaults();
+        sendEmail();
+      })
+     function sendEmail(){
 			Email.send({
         Host : "smtp.elasticemail.com",
-        Username : "deveshk979@gmail.com",
-        Password : "C554DE4A1CD1E60A9D48D9C82C8815D95790",
-        From: "deveshk979@gmail.com",
-				To: "-deveshk979@gmail.com",
+        Username : "varunkulkarni30@gmail.com",
+        Password : "6748D0F76994DDE0223E27AED8E08F0674B35",
+				To: "varunkulkarni30@gmail.com",
+        From: "varunkulkarni30@gmail.com",
 				Subject: "New message on Volunteers from "+name,
-				Body: Body
-			}).then(
-				message =>{
-					
-					if(message=='OK'){
-					alert('Your form has been submitted. Thank you for contacting us.');
-					}
-					else{
-						console.error (message);
-						alert(message)
-						
-					}
-
-				}
-			);
-
-
-
-		}
+				Body: "name:"+document.getElementById(name).value
+        + "Email:"+document.getElementById(email).value
+        +"Contact no:"+ document.getElementById(number).value
+			}).then( 
+        message=>alert("Your form has been submitted. Thank you for contacting us."));
+			}
+			
 
  </script>
 
