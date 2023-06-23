@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Upload</title>
+  <link rel="stylesheet" href="/upload/upload.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    .box-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 4px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .upload-container {
+      text-align: center;
+    }
+    
+    .upload-container input[type="file"] {
+      display: none;
+    }
+    
+    .upload-btn {
+      display: inline-block;
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    
+    .upload-btn:hover {
+      background-color: #2980b9;
+    }
+    
+    .selected-file {
+      margin-top: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+    
+    .submit-btn {
+      display: block;
+      margin-top: 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    
+    .submit-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+
+   
+</head>
+<body>
+  <div class="box-container">
+    <h1>Image Upload</h1>
+    
+    <div class="upload-container">
+      <label for="file-upload" class="upload-btn">Select Image</label>
+      <input type="file" id="file-upload" />
+      <p class="selected-file"></p>
+      <button class="submit-btn" >Submit</button>
+    </div>
+  </div>
+
+  <script>
+
+
+    
+    // Display selected file name
+    const fileUpload = document.getElementById("file-upload");
+    const selectedFile = document.querySelector(".selected-file");
+
+    fileUpload.addEventListener("change", (event) => {
+      const file = event.target.files[0];
+      selectedFile.textContent = file ? file.name : "";
+    });
+     
+    const btn= document.querySelector(".submit-btn");
+    btn.addEventListener("click", function(e){
+        e.preventDefault();
+        alert("Photo has been uploded");
+    });
+  </script>
+</body>
+</html>
