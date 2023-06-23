@@ -65,7 +65,7 @@
   }
   
   .section__description {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: 600;
     text-transform: uppercase;
     color: var(--color-primary);
@@ -323,6 +323,12 @@
   .operations__tab--3 {
     background-color: var(--color-tertiary);
     margin: 0;
+  }
+  .operations__tab--2 {
+    background-color: rgb(226, 113, 13);
+  }
+  .operations__tab--2:hover{
+    background-color: rgb(226, 113, 13);
   }
   
   .operations__tab--3:hover {
