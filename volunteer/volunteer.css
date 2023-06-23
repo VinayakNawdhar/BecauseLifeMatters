@@ -176,3 +176,19 @@
   .card span{
     color: red;
   }
+  .anchor a{
+    font-size: 3rem;
+    display: inline;
+    text-decoration: none;
+    padding: 50px;
+    background-color: var(--color-primary);
+    color: black;
+    border-radius: 50px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .anchor{
+    padding: 50px;
+    text-align: center;
+    margin-top: 40px;
+  }
