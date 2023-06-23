@@ -8,8 +8,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="volunteer.css">
+        <link rel="stylesheet" href="/Public/index.css">
+        <link rel="stylesheet" href="volunteerForm.css">
         <link rel="icon" href="images/images/logo.jpg">
       
       
@@ -35,37 +35,52 @@
 <body>
 
 
-    <nav class="navbar navbar-default navbar-fixed-top " style="background-color: #d3740f">
-        <div class="container-fluid">
-          <div class="navbar-header" style="height:50px; width:auto;">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>     
-            </button>
-            <a class="navbar-brand" href="#"></a>
-            <img src="https://devesh42508.github.io/responsive_website_forWSA/images/logo.jpg" height=50px width=auto style="border-radius: 50%;">
-          </div>
-          <div class="collapse navbar-collapse navbar-right" id="myNavbar" >
-          <ul class="nav navbar-nav navbar-right ">
-            <li><a href="index.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>HOME</b></a></li>
-            <li><a href="aboutus.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>ABOUT US</b></a></li>
-            <li><a href="volunteers.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>VOLUNTEERS</b></a></li>
+  <nav class="nav">
+    <img
+      src="/Images/full_logo.png"
+      alt="Bankist logo"
+      class="nav__logo"
+      id="logo"
+    />
+    <ul class="nav__links">
+      <li class="nav__item">
+        <a class="nav__link" href="#section--1">News</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#section--2">Alerts</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#section--3">Volunteers</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#section--4">Safe Homes</a>
+      </li>
       
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:white;  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 15px 15px 15px 15px;"><b>GALLERY</b><span class="caret"></span></a>
-              <ul class="dropdown-menu" style="background-color: #d3740f">
-                <li><a href="photos.html" style="color:white; background-color: #d3740f"><b>PHOTOS</b></a></li>
-                <li><a href="videos.html" style="color:white; background-color: #d3740f"><b>VIDEOS</b></a></li>
-              </ul>
-            </li>
-            
-            <li><a href="contactus.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 15px 15px 15px 15px;"><b>CONTACT US</b></a></li>
-            <li><a href="donation.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 15px 35px 15px 15px;"><b>DONATE</b></a></li>
+      </li>
+      <li class="nav__item">
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn-danger dropdown-toggle nav__link"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Supplies
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Medical</a></li>
+            <li><a class="dropdown-item" href="#">Grocery</a></li>
+            <li><a class="dropdown-item" href="#">Survival Kit</a></li>
           </ul>
-          </div>
         </div>
-      </nav>
-      
+      </li>
+      <li class="nav__item">
+        <a class="nav__link nav__link--btn btn--show-modal" href="#"
+          >Donate</a
+        >
+      </li>
+    </ul>
+  </nav>
       <br><br><br><br> 
 
 
@@ -116,31 +131,62 @@
 
       </div>
 
-      <div class="rightcontact">
+      <div class="rightcontact" data-rule="required">
 
 
-        <div class="form-group">
+        <!--- India states -->
+<p>Select state</p>
+<select id="country-state" name="country-state">
+  <option value="">Select state</option>
+  <option value="AN">Andaman and Nicobar Islands</option>
+  <option value="AP">Andhra Pradesh</option>
+  <option value="AR">Arunachal Pradesh</option>
+  <option value="AS">Assam</option>
+  <option value="BR">Bihar</option>
+  <option value="CH">Chandigarh</option>
+  <option value="CT">Chhattisgarh</option>
+  <option value="DN">Dadra and Nagar Haveli</option>
+  <option value="DD">Daman and Diu</option>
+  <option value="DL">Delhi</option>
+  <option value="GA">Goa</option>
+  <option value="GJ">Gujarat</option>
+  <option value="HR">Haryana</option>
+  <option value="HP">Himachal Pradesh</option>
+  <option value="JK">Jammu and Kashmir</option>
+  <option value="JH">Jharkhand</option>
+  <option value="KA">Karnataka</option>
+  <option value="KL">Kerala</option>
+  <option value="LA">Ladakh</option>
+  <option value="LD">Lakshadweep</option>
+  <option value="MP">Madhya Pradesh</option>
+  <option value="MH">Maharashtra</option>
+  <option value="MN">Manipur</option>
+  <option value="ML">Meghalaya</option>
+  <option value="MZ">Mizoram</option>
+  <option value="NL">Nagaland</option>
+  <option value="OR">Odisha</option>
+  <option value="PY">Puducherry</option>
+  <option value="PB">Punjab</option>
+  <option value="RJ">Rajasthan</option>
+  <option value="SK">Sikkim</option>
+  <option value="TN">Tamil Nadu</option>
+  <option value="TG">Telangana</option>
+  <option value="TR">Tripura</option>
+  <option value="UP">Uttar Pradesh</option>
+  <option value="UT">Uttarakhand</option>
+  <option value="WB">West Bengal</option>
+</select>
+        <div>
+            <div class="form-group">
           <p>Phone number <span>*</span></p>
           <span class="icon-case"><i class="fa fa-phone" style="font-size: 25px; padding-top: 20%;"></i></span>
           <input type="text" name="phone" id="number" data-rule="maxlen:10"
             data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres" />
           <div class="validation"></div>
         </div>
-
-
-        <div class="form-group">
-          <p>What skills can you bring to WSA?<span>*</span></p>
-          <span class="icon-case"><i class="fas fa-comment" style="font-size: 25px; padding-top: 20%;"></i></span>
-          <textarea type="text" name="sujet" id="skills" data-rule="required"></textarea>
-          <div class="validation"></div>
         </div>
 
-        <div class="form-group">
-          <p>What You Can do for us?<span>*</span></p>
-          <span class="icon-case"><i class="fas fa-comments" style="font-size: 25px; padding-top: 20%;"></i></span>
-          <textarea id="data2" name="message" rows="14" data-rule="required"></textarea>
-          <div class="validation"></div>
-        </div>
+        
       </div>
     </div>
     <button type="submit" class="bouton-contact" style="background-color: #049c04;">Send</button>
@@ -200,42 +246,34 @@
 
 
     <!-- Site footer -->
-    <footer class="site-footer">
-      <div class="container">
-
-          <div class="grid-container">
-              <div class="grid-item">
-
-                  <img src="images/images/logo.jpg" class="logo-img" style="border-radius: 50%;height: 40px; width: 40px;">
-
-              </div>
-
-              <div class="grid-item inner-grid-container">
-
-                <div class="grid-item"><a href="index.html">Home</a></div>
-                <div class="grid-item"><a href="projects.html">Services</a></div>
-                
-                
-                <div class="grid-item"><a href="volunteersForm.html">Join Us</a></div>
-                <div class="grid-item"><a href="contactus.html">Contact Us</a></div>
-            </div>
-
-               <div class="grid-item">
-              <div class = "social-buttons" style="float:left;">
-                  <a href= "https://instagram.com/we__save__animals?igshid=NTc4MTIwNjQ2YQ==" target="_blank"><i class="fa fa-instagram "></i></a>
-                  <a href= "https://www.facebook.com/WSA-We-Save-Animals-1663165890625653/?hc_ref=ARQ7vjLG3HV5adfBbiHtF6yOfhxAc-vHyBR6IC_l3cnIDUFiVYrMWs55MWhjJnGKdKw" target="_blank"><i class="fa fa-facebook "></i></a>
-                  <a href= "https://api.whatsapp.com/send/?phone=9632300046&text&app_absent=0" target="_blank"><i class="fa fa-whatsapp "></i></a><br>
-                  </a>
-              </div>
-          </div>  
-          </div>
-          <hr>
-
-          <p style="text-align: center;">© 2020. We Save Animals (WSA) Welfare Trust.
-            All Rights Reserved.</p>
-
-      </div>
-  </footer>
+ 
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="/Images/full_logo.png" alt="Logo" class="footer__logo" />
+     
+    </footer>
 
 </body>
 </html>
