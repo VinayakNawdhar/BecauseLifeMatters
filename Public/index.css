@@ -433,7 +433,7 @@
   
   .slider__btn {
     position: absolute;
-    top: 50%;
+    top: 45%;
     z-index: 10;
   
     border: none;
@@ -492,8 +492,10 @@
   
   /* TESTIMONIALS */
   .testimonial {
-    width: 65%;
+    width: 100%;
     position: relative;
+    height: 80%;
+    overflow-y: scroll;
   }
   
   .testimonial::before {
