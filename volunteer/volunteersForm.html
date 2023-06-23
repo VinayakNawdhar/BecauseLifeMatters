@@ -149,35 +149,9 @@
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
- 
-<script>  
-
-      const btnFinal = document.querySelector(".bouton-contact");
-      e.addEventListener("click",function(e){
-        e.preventDefaults();
-        sendEmail();
-      })
-     function sendEmail(){
-			Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "varunkulkarni30@gmail.com",
-        Password : "6748D0F76994DDE0223E27AED8E08F0674B35",
-				To: "varunkulkarni30@gmail.com",
-        From: "varunkulkarni30@gmail.com",
-				Subject: "New message on Volunteers from "+name,
-				Body: "name:"+document.getElementById(name).value
-        + "Email:"+document.getElementById(email).value
-        +"Contact no:"+ document.getElementById(number).value
-			}).then( 
-        message=>alert("Your form has been submitted. Thank you for contacting us."));
-			}
-			
-
- </script>
-
-
-    <!-- Site footer -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/volunteer/volunteerForm.js"></script>
+<!-- Site footer -->
  
     <footer class="footer">
       <ul class="footer__nav">
