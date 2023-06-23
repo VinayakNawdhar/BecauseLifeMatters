@@ -1,158 +1,331 @@
-
-
 <html>
-    <head>
-        <title>VOLUNTEER FORM</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="/Public/index.css">
-        <link rel="stylesheet" href="volunteerForm.css">
-        <link rel="icon" href="images/images/logo.jpg">
-      
-      
-        <!--PLUGIN-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      
-      
-        <!--FONT AWESOME-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-      
-        <!--GOOGLE FONTS-->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link
-          href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&family=Kanit:wght@300&display=swap"
-          rel="stylesheet">
-          <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+  <head>
+    <title>VOLUNTEER FORM</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/Public/index.css" />
+    <link rel="icon" href="images/images/logo.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&family=Kanit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel=”stylesheet”
+    href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+    <style>
+      .info p {
+    text-align:center;
+    color: #999;
+    text-transform:none;
+    font-weight:600;
+    font-size:15px;
+    margin-top:2px
+  }
+  
+  .info i {
+    color:#F6AA93;
+  }
+  form h1 {
+    font-size: 18px;
+    background: #F6AA93 none repeat scroll 0% 0%;
+    color: rgb(255, 255, 255);
+    padding: 22px 25px;
+    border-radius: 5px 5px 0px 0px;
+    margin: auto;
+    text-shadow: none; 
+    text-align:left
+  }
+  
+  form {
+    border-radius: 5px;
+    max-width:700px;
+    width:100%;
+    margin: 5% auto;
+    background-color: #FFFFFF;
+    overflow: hidden;
+  }
+  
+  p span {
+    color: #F00;
+  }
+  
+  p {
+    margin: 0px;
+    font-weight: 500;
+    line-height: 2;
+    color:#333;
+  }
+  
+  h1 {
+    text-align:center; 
+    color:#049c04;
+    text-shadow: 1px 1px 0px #FFF;
+    margin:50px 0px 0px 0px
+  }
+  
+  input {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+    width: 75%;
+    height: 40px;
+    float: left;
+    padding: 0px 15px;
+  }
+  
+  a {
+    text-decoration:inherit
+  }
+  
+  textarea {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #EEE;
+    margin: 0;
+    width: 75%;
+    height: 130px; 
+    float: left;
+    padding: 0px 15px;
+  }
+  
+  .form-group {
+    overflow: hidden;
+    clear: both;
+  }
+  
+  .icon-case {
+    width: 35px;
+    float: left;
+    border-radius: 5px 0px 0px 5px;
+    background:#eeeeee;
+    height:42px;
+    position: relative;
+    text-align: center;
+    line-height:40px;
+  }
+  
+  i {
+    color:white;
+  }
+  
+  
+  .contentform {
+    padding: 40px 30px;
+  }
+  
+  .bouton-contact{
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+    border:0;
+    padding: 17px 25px;
+    border-radius: 0px 0px 5px 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    font-size: 18px;
+  }
+  
+  .leftcontact {
+    width:49.5%; 
+    float:left;
+    border-right: 1px dotted #CCC;
+    box-sizing: border-box;
+    padding: 0px 15px 0px 0px;
+  }
+  
+  .rightcontact {
+    width:49.5%;
+    float:right;
+    box-sizing: border-box;
+    padding: 0px 0px 0px 15px;
+  }
+  
+  .validation {
+    display:none;
+    margin: 0 0 10px;
+    font-weight:400;
+    font-size:13px;
+    color: #DE5959;
+  }
+  
+  #sendmessage {
+    border:1px solid #fff;
+    display:none;
+    text-align:center;
+    margin:10px 0;
+    font-weight:600;
+    margin-bottom:30px;
+    background-color: #EBF6E0;
+    color: #049c04;
+    border: 1px solid #B3DC82;
+    padding: 13px 40px 13px 18px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.03);
+  }
+  
+  #sendmessage.show,.show  {
+    display:block;  
+  }
+  .bouton-contact{
+    background-color: #049c04;
+  }
+    </style>
+  </head>
 
-      </head>
+  <body>
+    <h1>VOLUNTEER FORM</h1>
+    <form>
+      <div class="contentform">
+        <div class="leftcontact">
+          <div class="form-group">
+            <p>Name <span>*</span></p>
+            <span class="icon-case"
+              ><i
+                class="fa fa-user"
+                style="font-size: 25px; padding-top: 20%"
+              ></i
+            ></span>
+            <input
+              type="text"
+              name="prenom"
+              id="Name"
+              data-rule="required"
+              class="name"
+            />
+            <div class="validation"></div>
+          </div>
 
-     
+          <div class="form-group">
+            <p>E-mail <span>*</span></p>
+            <span class="icon-case"
+              ><i
+                class="fas fa-envelope"
+                style="font-size: 25px; padding-top: 20%"
+              ></i
+            ></span>
+            <input
+              class="email"
+              type="email"
+              name="email"
+              id="email"
+              data-rule="email"
+              data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire."
+            />
+            <div class="validation"></div>
+          </div>
 
-<body>
+          <div class="form-group">
+            <p>Address <span>*</span></p>
+            <span class="icon-case"
+              ><i
+                class="fa fa-location-arrow"
+                style="font-size: 25px; padding-top: 20%"
+              ></i
+            ></span>
+            <input
+              class="address"
+              type="text"
+              name="adresse"
+              id="address"
+              data-rule="required"
+            />
+            <div class="validation"></div>
+          </div>
 
-
-<h1>VOLUNTEER FORM</h1>
-
-  <form onsubmit="sendEmail();  return false">
-
-    <div class="contentform">
-      <div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
-
-
-      <div class="leftcontact">
-        
-
-        <div class="form-group">
-          <p>Name <span>*</span></p>
-          <span class="icon-case"><i class="fa fa-user" style="font-size: 25px; padding-top: 20%;"></i></span>
-          <input type="text" name="prenom" id="Name" data-rule="required"
-            data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné." />
-          <div class="validation"></div>
+          <div class="form-group">
+            <p>Tell us about Yourself..<span>*</span></p>
+            <span class="icon-case"
+              ><i
+                class="fas fa-user-edit"
+                style="font-size: 25px; padding-top: 20%"
+              ></i
+            ></span>
+            <textarea
+              type="text"
+              name="postal"
+              id="data1"
+              data-rule="required"
+            ></textarea>
+            <div class="validation"></div>
+          </div>
         </div>
 
-        <div class="form-group">
-          <p>E-mail <span>*</span></p>
-          <span class="icon-case"><i class="fas fa-envelope" style="font-size: 25px; padding-top: 20%;"></i></span>
-          <input type="email" name="email" id="email" data-rule="email"
-            data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire." />
-          <div class="validation"></div>
-        </div>
-
-
-        <div class="form-group">
-          <p>Address <span>*</span></p>
-          <span class="icon-case"><i class="fa fa-location-arrow" style="font-size: 25px; padding-top: 20%;"></i></span>
-          <input type="text" name="adresse" id="address" data-rule="required"
-            data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné." />
-          <div class="validation"></div>
-        </div>
-
-        <div class="form-group">
-          <p>Tell us about Yourself..<span>*</span></p>
-          <span class="icon-case"><i class="fas fa-user-edit" style="font-size: 25px; padding-top: 20%;"></i></span>
-          <textarea type="text" name="postal" id="data1" data-rule="required"></textarea>
-          <div class="validation"></div>
-        </div>
-
-
-
-      </div>
-
-      <div class="rightcontact" data-rule="required">
-
-
-        <!--- India states -->
-<p>Select state</p>
-<select id="country-state" name="country-state">
-  <option value="">Select state</option>
-  <option value="AN">Andaman and Nicobar Islands</option>
-  <option value="AP">Andhra Pradesh</option>
-  <option value="AR">Arunachal Pradesh</option>
-  <option value="AS">Assam</option>
-  <option value="BR">Bihar</option>
-  <option value="CH">Chandigarh</option>
-  <option value="CT">Chhattisgarh</option>
-  <option value="DN">Dadra and Nagar Haveli</option>
-  <option value="DD">Daman and Diu</option>
-  <option value="DL">Delhi</option>
-  <option value="GA">Goa</option>
-  <option value="GJ">Gujarat</option>
-  <option value="HR">Haryana</option>
-  <option value="HP">Himachal Pradesh</option>
-  <option value="JK">Jammu and Kashmir</option>
-  <option value="JH">Jharkhand</option>
-  <option value="KA">Karnataka</option>
-  <option value="KL">Kerala</option>
-  <option value="LA">Ladakh</option>
-  <option value="LD">Lakshadweep</option>
-  <option value="MP">Madhya Pradesh</option>
-  <option value="MH">Maharashtra</option>
-  <option value="MN">Manipur</option>
-  <option value="ML">Meghalaya</option>
-  <option value="MZ">Mizoram</option>
-  <option value="NL">Nagaland</option>
-  <option value="OR">Odisha</option>
-  <option value="PY">Puducherry</option>
-  <option value="PB">Punjab</option>
-  <option value="RJ">Rajasthan</option>
-  <option value="SK">Sikkim</option>
-  <option value="TN">Tamil Nadu</option>
-  <option value="TG">Telangana</option>
-  <option value="TR">Tripura</option>
-  <option value="UP">Uttar Pradesh</option>
-  <option value="UT">Uttarakhand</option>
-  <option value="WB">West Bengal</option>
-</select>
-        <div>
+        <div class="rightcontact" data-rule="required">
+          <!--- India states -->
+          <p>Select state</p>
+          <select id="country-state" class="state" name="country-state">
+            <option value="">Select state</option>
+            <option value="AN">Andaman and Nicobar Islands</option>
+            <option value="AP">Andhra Pradesh</option>
+            <option value="AR">Arunachal Pradesh</option>
+            <option value="AS">Assam</option>
+            <option value="BR">Bihar</option>
+            <option value="CH">Chandigarh</option>
+            <option value="CT">Chhattisgarh</option>
+            <option value="DN">Dadra and Nagar Haveli</option>
+            <option value="DD">Daman and Diu</option>
+            <option value="DL">Delhi</option>
+            <option value="GA">Goa</option>
+            <option value="GJ">Gujarat</option>
+            <option value="HR">Haryana</option>
+            <option value="HP">Himachal Pradesh</option>
+            <option value="JK">Jammu and Kashmir</option>
+            <option value="JH">Jharkhand</option>
+            <option value="KA">Karnataka</option>
+            <option value="KL">Kerala</option>
+            <option value="LA">Ladakh</option>
+            <option value="LD">Lakshadweep</option>
+            <option value="MP">Madhya Pradesh</option>
+            <option value="MH">Maharashtra</option>
+            <option value="MN">Manipur</option>
+            <option value="ML">Meghalaya</option>
+            <option value="MZ">Mizoram</option>
+            <option value="NL">Nagaland</option>
+            <option value="OR">Odisha</option>
+            <option value="PY">Puducherry</option>
+            <option value="PB">Punjab</option>
+            <option value="RJ">Rajasthan</option>
+            <option value="SK">Sikkim</option>
+            <option value="TN">Tamil Nadu</option>
+            <option value="TG">Telangana</option>
+            <option value="TR">Tripura</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="UT">Uttarakhand</option>
+            <option value="WB">West Bengal</option>
+          </select>
+          <div>
             <div class="form-group">
-          <p>Phone number <span>*</span></p>
-          <span class="icon-case"><i class="fa fa-phone" style="font-size: 25px; padding-top: 20%;"></i></span>
-          <input type="text" name="phone" id="number" data-rule="maxlen:10"
-            data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres" />
-          <div class="validation"></div>
+              <p>Phone number <span>*</span></p>
+              <span class="icon-case"
+                ><i
+                  class="fa fa-phone"
+                  style="font-size: 25px; padding-top: 20%"
+                ></i
+              ></span>
+              <input
+                class="phno"
+                type="text"
+                name="phone"
+                id="number"
+                data-rule="maxlen:10"
+                data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"
+              />
+              <div class="validation"></div>
+            </div>
+          </div>
         </div>
-        </div>
-
-        
       </div>
-    </div>
-    <button type="submit" class="bouton-contact" style="background-color: #049c04;">Send</button>
+      <button class="bouton-contact" style="background-color: #049c04">
+        Send
+      </button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Site footer -->
 
-   
-  </form>
-
-  <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="/volunteer/volunteerForm.js"></script>
-<!-- Site footer -->
- 
     <footer class="footer">
       <ul class="footer__nav">
         <li class="footer__item">
@@ -178,8 +351,21 @@
         </li>
       </ul>
       <img src="/Images/full_logo.png" alt="Logo" class="footer__logo" />
-     
     </footer>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      let btn = document.querySelector(".bouton-contact");
+       btn.addEventListener("click", async function (e) {
+        e.preventDefault();
+        let user_name = document.querySelector(".name").value;
+        let email = document.querySelector(".email").value;
+        let address = document.querySelector(".address").value;
+        let state = document.querySelector(".state").value;
+        let Ph_no = document.querySelector(".phno").value;
+        console.log(user_name,email,address,state,Ph_no);
+        let resp = await axios.post('/auth/signup',{user_name,email,address,state,Ph_no});
+        console.log(resp);
+      });
+    </script>
+  </body>
 </html>
