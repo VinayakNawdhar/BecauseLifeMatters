@@ -154,3 +154,20 @@
   .bouton-contact{
     background-color: #049c04;
   }
+
+  .volunteer-container{
+    display: flex;
+    padding-left: 180px;
+  }
+  .volunteer-container span{
+    color: red;
+  }
+  .volunteer-container img{
+    height: 200px;
+  }
+
+  .volunteer-item{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+  }
