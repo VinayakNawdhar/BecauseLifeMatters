@@ -65,7 +65,7 @@
   }
   
   .section__description {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: 600;
     text-transform: uppercase;
     color: var(--color-primary);
@@ -144,7 +144,7 @@
   }
   
   .nav__logo {
-    height: 8rem;
+    height: 10rem;
     transition: all 0.3s;
   }
   
@@ -162,6 +162,7 @@
     color: #333;
     font-size: large;
     border: none;
+    background-color: inherit;
   }
 
   .nav__link:link,
@@ -324,6 +325,12 @@
   .operations__tab--3 {
     background-color: var(--color-tertiary);
     margin: 0;
+  }
+  .operations__tab--2 {
+    background-color: rgb(226, 113, 13);
+  }
+  .operations__tab--2:hover{
+    background-color: rgb(226, 113, 13);
   }
   
   .operations__tab--3:hover {
@@ -699,3 +706,12 @@
     overflow-x: hidden;
   }
   
+  .ember-view {
+    width: 20vw;
+    display: block;
+    margin-right: 100px;
+    margin-left: 30px;
+  }
+  .twitter-handle{
+    display: flex;
+  }
