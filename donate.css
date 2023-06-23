@@ -47,20 +47,6 @@ html {
     font-size: 2rem;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background:#ff9933;
-    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, 3);
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    padding: 1 rem 5rem;
-    height: 80px;
-    width: 100%;
-}
 
 header .logo {
     color: green;
