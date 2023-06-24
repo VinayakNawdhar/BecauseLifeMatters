@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>VOLUNTEER FORM</title>
+    <title>SUBSCRIBE FORM</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/Public/index.css" />
@@ -63,7 +63,7 @@
   
   h1 {
     text-align:center; 
-    color:#049c04;
+    color:rgb(69, 109, 193);
     text-shadow: 1px 1px 0px #FFF;
     margin:50px 0px 0px 0px
   }
@@ -160,8 +160,8 @@
     font-weight:600;
     margin-bottom:30px;
     background-color: #EBF6E0;
-    color: #049c04;
-    border: 1px solid #B3DC82;
+    color: rgb(69, 109, 193);
+    border: 1px solid lightblue;
     padding: 13px 40px 13px 18px;
     border-radius: 3px;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.03);
@@ -171,7 +171,7 @@
     display:block;  
   }
   .bouton-contact{
-    background-color: #049c04;
+    background-color: rgb(69, 109, 193);
   }
     </style>
     <script src="https://smtpjs.com/v3/smtp.js">
@@ -179,7 +179,7 @@
   </head>
 
   <body>
-    <h1>VOLUNTEER FORM</h1>
+    <h1>SUBSCRIBE FOR ALERTS</h1>
     <form>
       <div class="contentform">
         <div class="leftcontact">
@@ -238,22 +238,7 @@
             <div class="validation"></div>
           </div>
 
-          <div class="form-group">
-            <p>Tell us about Yourself..<span>*</span></p>
-            <span class="icon-case"
-              ><i
-                class="fas fa-user-edit"
-                style="font-size: 25px; padding-top: 20%"
-              ></i
-            ></span>
-            <textarea
-              type="text"
-              name="postal"
-              id="data1"
-              data-rule="required"
-            ></textarea>
-            <div class="validation"></div>
-          </div>
+        
         </div>
 
         <div class="rightcontact" data-rule="required">
@@ -321,26 +306,57 @@
           </div>
         </div>
       </div>
-      <button class="bouton-contact"  onclick="sendEmail()"style="background-color: #049c04 ">
+      <button class="bouton-contact"  onclick="sendEmail()" >
         Send
       </button>
     </form>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
-      function sendEmail(){
+        function sendEmail(){
       Email.send({
     Host : "smtp.elasticemail.com",
     Username : "varunkulkarni30@gmail.com",
     Password : "93559108D269D41776040316BB06F4AB0135",
-    To : document.getElementById("email").value,
+    To :document.getElementById("email").value,
     From : "varunkulkarni30@gmail.com",
     Subject : "This is the subject",
-    Body : {
-        "name:" : document.getElementById("Name").value ,
-        "email" : document.getElementById("email").value,
-        "state": document.getElementById("country-state").value
-    }
-      }).then(
+    Body : `Hi, ${document.getElementById("Name").value}, 
+
+
+
+
+
+
+We write to you with grave concern and a heavy heart as we inform you about the imminent threat of a disaster that poses a significant risk to your safety and well-being. Our latest assessments and forecasts indicate that your area, designated as a red zone, is at high risk of being directly affected by this calamity.
+
+It is our utmost priority to ensure that you are well-informed and prepared to face the challenges ahead. While we understand that this news may cause anxiety and distress, we strongly urge you to take immediate action to safeguard yourself and your loved ones. Please consider the following urgent measures:
+
+Evacuation: If there is an evacuation order in place, we implore you to adhere to it without delay. Follow the instructions provided by local authorities and emergency management personnel, as they are trained to guide you to safety. Make sure to gather essential items such as identification documents, medications, a first aid kit, and any necessary supplies before leaving your home.
+
+Emergency Shelter: Seek refuge in designated emergency shelters or secure locations as advised 
+
+by the authorities. These facilities are equipped to provide temporary accommodation, food, and essential services during times of crisis. Stay connected with local news channels, radio, or official communication channels for updates and guidance.
+
+Emergency Contacts: Share your whereabouts and contact details with trusted family members, 
+friends, or neighbors who are outside the affected area. Ensure they are aware of your situation and keep them updated regularly. In case of separation, establish a predetermined meeting point where you can reunite with your loved ones.
+
+Emergency Supplies: Assemble an emergency kit containing essential supplies, including food, water, medications, batteries, flashlights, a portable radio, and a charged mobile phone. This will help sustain you during the initial hours or days following the disaster until assistance arrives.
+
+Stay Informed: Continuously monitor official sources of information for updates, including 
+weather bulletins, evacuation orders, and safety advisories. Follow instructions from emergency responders and public safety agencies to ensure your well-being.
+
+Support Network: Lean on your community and neighbors for support and assistance during this challenging time. Look out for one another, particularly those who may require additional help, such as the elderly, individuals with disabilities, or families with young children.
+
+Remember, the decision you make now can significantly impact your safety. Do not underestimate the severity of the situation or the potential risks involved. Prompt and decisive action is crucial for your survival.
+
+Our thoughts and prayers are with you as we navigate this difficult period together. We are committed to providing the necessary resources and assistance to help you recover and rebuild in the aftermath of this disaster.
+
+Please stay safe, stay vigilant, and stay united.
+
+Sincerely,
+
+[Your Local Disaster Management Authority or Relief  BecuaseLifeMatters]`
+ }).then(
   message => alert("Email sent")
 );}
     </script>

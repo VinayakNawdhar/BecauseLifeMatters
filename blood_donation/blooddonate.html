@@ -96,6 +96,26 @@
                 <option value="DN">O-</option>
                 
               </select>
+              <script>
+                function sendEmail(){
+                Email.send({
+              Host : "smtp.elasticemail.com",
+              Username : "varunkulkarni30@gmail.com",
+              Password : "93559108D269D41776040316BB06F4AB0135",
+              To : 'varunkulkarni30@gmail.com',
+              From : "varunkulkarni30@gmail.com",
+              Subject : "This is the subject",
+              Body : { "name:" : document.getElementById("Name").value ,
+                  "email" : document.getElementById("email").value,
+                  "address": document.getElementById("address").value,
+                  "Blood group" : document.getElementById("Blood group")
+          
+              }
+          
+                }).then(
+            message => alert(message)
+          );}
+              </script>
               <div>
                 <div class="form-group">
                   <p>Phone number <span>*</span></p>
@@ -121,5 +141,6 @@
           <button class="bouton-contact"  onclick="sendEmail()"style="background-color: #049c04">
             Donate
           </button>
+          
 </body>
 </html>

@@ -137,9 +137,12 @@
     To : 'varunkulkarni30@gmail.com',
     From : "varunkulkarni30@gmail.com",
     Subject : "This is the subject",
-    Body : "name:"+name
-            +"Adress"+address
-            +"Ph No:"+number
+    Body : { "name:" : document.getElementById("Name").value ,
+        "email" : document.getElementById("email").value,
+        "sate": document.getElementById("country-state").value,
+
+    }
+
       }).then(
   message => alert(message)
 );}
