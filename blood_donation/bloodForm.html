@@ -26,7 +26,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header" style="margin-bottom: 50px;">
       <nav class="nav">
         <img src="/Images/full_logo.png" alt="Bankist logo" class="nav__logo" id="logo" />
         <ul class="nav__links">
@@ -68,10 +68,12 @@
           </li>
         </ul>
       </nav>
-    <h1 style="color: rgb(39, 105, 197); margin-bottom: 30px;">BLOOD DONATION</h1>
+    <h1 style="color: rgb(39, 105, 197);">BLOOD DONATION</h1>
+    <img src="/Images/blood-donation-1.webp" alt="" class="donation-1">
+    <img src="/Images/donation-2.jpg" alt="" class="donation-2">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <div class="blood-counter-container">
-      <h2>Blood Count</h1>
+      <h2>Blood Count</h2>
       <div class="blood-counter">
         <span>B+</span>
         <div class="counter-border"><div class="counter bpos"></div></div><span class="bposper">10</span>
@@ -127,6 +129,7 @@
       </ul>
       <img src="/Images/full_logo.png" alt="Logo" class="footer__logo" />
     </footer> 
+    <div class="preloader-container"><img class="preloader" src="/Images/preloader.gif" alt=""></div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
       function sendEmail(){

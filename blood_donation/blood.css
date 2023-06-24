@@ -809,20 +809,29 @@ ul {
 
   /* Counter   */
   .blood-counter-container{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 60vw;
     height: 70vh;
-    padding: 30px;
+    padding: 20px 30px;
+  }
+  .blood-counter-container h2{
+    position: relative;
+    left: 10px;
+    margin: 20px 10px;
+    font-weight: 800;
   }
   .counter{
-    background-color: red;
+    background-color: rgba(225, 24, 13, 0.764);
     height: 100%;
     width: 50%;
+    border-radius: 0px 6px 6px 0px;
+    border-right:2px solid #f30606;
   }
   .counter-border{
     border: 2px solid grey;
     width: 75%;
     height: 20px;
+    box-shadow: -1px -1px 5px 5px rgba(0, 0, 0, 0.673);
   }
   .blood-counter{
     display: flex;
@@ -832,10 +841,11 @@ ul {
     font-size: 2rem;
     margin: 0px 20px;
     width: 50px;
+    font-weight: 800;
   }
   .buttons{
     margin: 100px auto;
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .buttons button{
     border: none;
@@ -843,12 +853,17 @@ ul {
     
   }
   .buttons button a{
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    box-shadow: 2px 2px 2px 2px black;
     border-radius: 50px;
     padding: 40px;
     color: rgb(0, 0, 0);
     text-decoration: none;
     background-color: #5EC576;
+  }
+  .buttons button a:hover{
+    color: #5EC576;
+    background-color: #333;
   }
   .bpos{
     width: 40%;
@@ -868,3 +883,33 @@ ul {
   .abpos{
     width: 70%;
   }
+  .donation-1{
+    height: 350px;
+    position: absolute;
+    left: 40px;
+    top: 32vh;
+    border-radius: 50px;
+  }
+  .donation-2{
+    height: 350px;
+    width: 300px;
+    position: absolute;
+    right: 60px;
+    top: 32vh;
+  }
+  .preloader{
+    position: relative;
+    left: 45%;
+    top: 35%;
+    z-index: 2000;
+  
+  }
+  .preloader-container{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    top: 0px;
+    background-color: rgb(244, 243, 243);
+  }
+  

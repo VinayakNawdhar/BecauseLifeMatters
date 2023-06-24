@@ -1,7 +1,10 @@
 'use strict';
 
 // prettier-ignore
-
+window.addEventListener('load',function(){
+  document.querySelector(".preloader").style.display = "none";
+  document.querySelector(".preloader-container").style.display = "none";
+})
 
 class Workout {
   date = new Date();
@@ -93,6 +96,10 @@ class App {
   }
 
   _renderWorkoutMarker(eventsObj) {
+    let popup = 'running-popup';
+    if(eventsObj.duration.toLowerCase() == 'home'){
+      popup = "cycling-popup";
+    }
     L.marker([eventsObj.event.lat, eventsObj.event.lng])
       .addTo(this.#map)
       .bindPopup(
@@ -102,7 +109,7 @@ class App {
           autoClose: false,
           closeOnClick: false,
           closeButton: false,
-          className: 'running-popup',
+          className: popup,
         }).setContent(
           (eventsObj.duration).toUpperCase()
         )
