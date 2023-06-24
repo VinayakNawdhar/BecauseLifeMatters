@@ -51,9 +51,7 @@ message.classList.add('cookie-message');
 message.style.backgroundColor = '#37383d';
 
 
-btnScrollTo.addEventListener('click',function(){
-  section1.scrollIntoView({behavior:'smooth'});
-})
+
 const navlinks = document.querySelectorAll('.nav__link');
 for(let i=0;i<3;i++){
   navlinks[i].addEventListener('click',function(e){
