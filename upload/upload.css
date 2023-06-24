@@ -1,22 +1,37 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+
+
 .upload-btn{
-    
     text-align: center;
-    width: 80%;
+    width: 70%;
     border:0;
     padding: 17px 25px;
     border-radius: 0px 0px 5px 5px;
     cursor: pointer;
-    margin-top: 100px;
+    margin: 50px auto;
     font-size: 18px;
 }
 .submit-btn{
     text-align: center;
     width:50%;
     border:0;
-    padding: 20pxpx 50pxpx;
+    padding: 20px 50px;
     border-radius: 0px 0px 5px 5px;
     cursor: pointer;
     margin-top:150px;
     font-size: 18px;
-    margin-left:150px;
+    margin: 50px auto;
+}
+.upload-container{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    font-size: 1.4rem;
+    width: 70%;
+    margin: 30px auto;
+}
+*{
+    font-family:  "Ubuntu";
 }

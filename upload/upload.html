@@ -71,18 +71,23 @@
     <h1>Image Upload</h1>
     
     <div class="upload-container">
+      <form action="">
+    
+        <input type="text" name="Name" placeholder="Name"> <br>
+     
+        <input type="text" name="Phno" placeholder="Phone Number"> <br>
+        
+        <input type="text" name="Location" placeholder="Location">
+      </form>
       <label for="file-upload" class="upload-btn">Select Image</label>
       <input type="file" id="file-upload" />
       <p class="selected-file"></p>
       <button class="submit-btn" >Submit</button>
     </div>
   </div>
+ 
 
   <script>
-
-
-    
-    // Display selected file name
     const fileUpload = document.getElementById("file-upload");
     const selectedFile = document.querySelector(".selected-file");
 
@@ -95,7 +100,12 @@
     btn.addEventListener("click", function(e){
         e.preventDefault();
         alert("Photo has been uploded");
+        document.querySelectorAll("input[type='text']").forEach(function(currel){
+      currel.value = "";
+      })
     });
+
+    
   </script>
 </body>
 </html>
