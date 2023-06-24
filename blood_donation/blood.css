@@ -833,3 +833,20 @@ ul {
     margin-right: 20px;
     width: 50px;
   }
+  .buttons{
+    margin: 100px auto;
+    font-size: 5rem;
+  }
+  .buttons button{
+    border: none;
+    margin: 0px 100px;
+    
+  }
+  .buttons button a{
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 40px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: #5EC576;
+  }
