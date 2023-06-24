@@ -93,6 +93,10 @@ class App {
   }
 
   _renderWorkoutMarker(eventsObj) {
+    let popup = 'running-popup';
+    if(eventsObj.duration.toLowerCase() == 'home'){
+      popup = "cycling-popup";
+    }
     L.marker([eventsObj.event.lat, eventsObj.event.lng])
       .addTo(this.#map)
       .bindPopup(
@@ -102,7 +106,7 @@ class App {
           autoClose: false,
           closeOnClick: false,
           closeButton: false,
-          className: 'running-popup',
+          className: popup,
         }).setContent(
           (eventsObj.duration).toUpperCase()
         )
