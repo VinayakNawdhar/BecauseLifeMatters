@@ -810,7 +810,7 @@ ul {
   /* Counter   */
   .blood-counter-container{
     border: 2px solid black;
-    width: 40vw;
+    width: 60vw;
     height: 70vh;
     padding: 30px;
   }
@@ -821,7 +821,7 @@ ul {
   }
   .counter-border{
     border: 2px solid grey;
-    width: 80%;
+    width: 75%;
     height: 20px;
   }
   .blood-counter{
@@ -830,7 +830,7 @@ ul {
   }
   .blood-counter span{
     font-size: 2rem;
-    margin-right: 20px;
+    margin: 0px 20px;
     width: 50px;
   }
   .buttons{

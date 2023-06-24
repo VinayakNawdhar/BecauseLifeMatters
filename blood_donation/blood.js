@@ -44,3 +44,26 @@ document.addEventListener('DOMContentLoaded',function(){
   console.log('loaded');
 })
 
+const bposper = document.querySelector(".bposper");
+const aposper = document.querySelector(".aposper");
+const anegper = document.querySelector(".anegper");
+const oposper = document.querySelector(".oposper");
+const onegper = document.querySelector(".onegper");
+const abposper = document.querySelector(".abposper");
+const bpos = document.querySelector(".bpos");
+const apos = document.querySelector(".apos");
+const aneg = document.querySelector(".aneg");
+const opos = document.querySelector(".opos");
+const oneg = document.querySelector(".oneg");
+const abpos = document.querySelector(".abpos");
+
+
+bposper.textContent = `${(parseInt(getComputedStyle(bpos).width)/579.75*100).toFixed(0)} % `;
+aposper.textContent = `${(parseInt(getComputedStyle(apos).width)/579.75*100).toFixed(0)} % `;
+anegper.textContent = `${(parseInt(getComputedStyle(aneg).width)/579.75*100).toFixed(0)} % `;
+// oposper.textContent = `${(parseInt(getComputedStyle(opos).width)/579.75*100).toFixed(0)} % `;
+onegper.textContent = `${(parseInt(getComputedStyle(oneg).width)/579.75*100).toFixed(0)} % `;
+abposper.textContent = `${(parseInt(getComputedStyle(abpos).width)/579.75*100).toFixed(0)} % `;
+
+
+
