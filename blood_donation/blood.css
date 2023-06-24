@@ -850,3 +850,21 @@ ul {
     text-decoration: none;
     background-color: #5EC576;
   }
+  .bpos{
+    width: 40%;
+  }
+  .apos{
+    width: 70%;
+  }
+  .aneg{
+    width: 30%;
+  }
+  .opos{
+    width: 92%;
+  }
+  .oneg{
+    width: 50%;
+  }
+  .abpos{
+    width: 70%;
+  }
