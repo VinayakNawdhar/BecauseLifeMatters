@@ -1,5 +1,8 @@
 'use strict';
-
+window.addEventListener('load',function(){
+  document.querySelector(".preloader").style.display = "none";
+  document.querySelector(".preloader-container").style.display = "none";
+})
 // Modal Window
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
