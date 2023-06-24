@@ -1,0 +1,350 @@
+<html>
+  <head>
+    <title>DONATION FORM</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/Public/index.css" />
+    <link rel="icon" href="images/images/logo.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&family=Kanit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel=”stylesheet”
+    href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+    <style>
+      .info p {
+    text-align:center;
+    color: #999;
+    text-transform:none;
+    font-weight:600;
+    font-size:15px;
+    margin-top:2px
+  }
+  
+  .info i {
+    color:#F6AA93;
+  }
+  form h1 {
+    font-size: 18px;
+    background: #F6AA93 none repeat scroll 0% 0%;
+    color: rgb(255, 255, 255);
+    padding: 22px 25px;
+    border-radius: 5px 5px 0px 0px;
+    margin: auto;
+    text-shadow: none; 
+    text-align:left
+  }
+  
+  form {
+    border-radius: 5px;
+    max-width:700px;
+    width:100%;
+    margin: 5% auto;
+    background-color: #FFFFFF;
+    overflow: hidden;
+  }
+  
+  p span {
+    color: #F00;
+  }
+  
+  p {
+    margin: 0px;
+    font-weight: 500;
+    line-height: 2;
+    color:#333;
+  }
+  
+  h1 {
+    text-align:center; 
+    color:#f14800;
+    text-shadow: 1px 1px 0px #FFF;
+    margin:50px 0px 0px 0px
+  }
+  
+  input {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+    width: 75%;
+    height: 40px;
+    float: left;
+    padding: 0px 15px;
+  }
+  
+  a {
+    text-decoration:inherit
+  }
+  
+  textarea {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #EEE;
+    margin: 0;
+    width: 75%;
+    height: 130px; 
+    float: left;
+    padding: 0px 15px;
+  }
+  
+  .form-group {
+    overflow: hidden;
+    clear: both;
+  }
+  
+  .icon-case {
+    width: 35px;
+    float: left;
+    border-radius: 5px 0px 0px 5px;
+    background:#eeeeee;
+    height:42px;
+    position: relative;
+    text-align: center;
+    line-height:40px;
+  }
+  
+  i {
+    color:white;
+  }
+  
+  
+  .contentform {
+    padding: 40px 30px;
+  }
+  
+  .bouton-contact{
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+    border:0;
+    padding: 17px 25px;
+    border-radius: 0px 0px 5px 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    font-size: 18px;
+  }
+  
+  .leftcontact {
+    width:49.5%; 
+    float:left;
+    border-right: 1px dotted #CCC;
+    box-sizing: border-box;
+    padding: 0px 15px 0px 0px;
+  }
+  
+  .rightcontact {
+    width:49.5%;
+    float:right;
+    box-sizing: border-box;
+    padding: 0px 0px 0px 15px;
+  }
+  
+  .validation {
+    display:none;
+    margin: 0 0 10px;
+    font-weight:400;
+    font-size:13px;
+    color: #DE5959;
+  }
+  
+  #sendmessage {
+    border:1px solid #fff;
+    display:none;
+    text-align:center;
+    margin:10px 0;
+    font-weight:600;
+    margin-bottom:30px;
+    background-color: #EBF6E0;
+    color: #f14800;
+    border: 1px solid #B3DC82;
+    padding: 13px 40px 13px 18px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.03);
+  }
+  
+  #sendmessage.show,.show  {
+    display:block;  
+  }
+  .bouton-contact{
+    background-color: #f14800;
+  }
+    </style>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+  </head>
+
+  <body>
+    <h1>Blood donation form</h1>
+    <form>
+      <div class="contentform">
+        <div class="leftcontact">
+          <div class="form-group">
+            <p>Name <span>*</span></p>
+            <span class="icon-case"
+              ><i
+                class="fa fa-user"
+                style="font-size: 25px; padding-top: 20%"
+              ></i
+            ></span>
+            <input
+              type="text"
+              name="prenom"
+              id="Name"
+              data-rule="required"
+              class="name"
+            />
+            <div class="validation"></div>
+          </div>
+
+          <div class="form-group">
+            <p>E-mail <span>*</span></p>
+            <span class="icon-case"
+              ><i
+                class="fas fa-envelope"
+                style="font-size: 25px; padding-top: 20%"
+              ></i
+            ></span>
+            <input
+              class="email"
+              type="email"
+              name="email"
+              id="email"
+              data-rule="email"
+              data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire."
+            />
+            <div class="validation"></div>
+          </div>
+
+          <div class="form-group">
+            <p>Address <span>*</span></p>
+            <span class="icon-case"
+              ><i
+                class="fa fa-location-arrow"
+                style="font-size: 25px; padding-top: 20%"
+              ></i
+            ></span>
+            <input
+              class="address"
+              type="text"
+              name="adresse"
+              id="address"
+              data-rule="required"
+            />
+            <div class="validation"></div>
+          </div>
+
+          <div class="form-group">
+            <p>Blood group<span>*</span></p>
+            <span class="icon-case"
+              ><i
+                class="fas fa-user-edit"
+                style="font-size: 25px; padding-top: 20%"
+              ></i
+            ></span>
+            <input
+              class="address"
+              type="text"
+              name="adresse"
+              id="address"
+              data-rule="required"
+            />
+            
+            <div class="validation"></div>
+          </div>
+        </div>
+
+        
+          <div>
+            <div class="form-group">
+              <p>Phone number <span>*</span></p>
+              <span class="icon-case"
+                ><i
+                  class="fa fa-phone"
+                  style="font-size: 25px; padding-top: 20%"
+                ></i
+              ></span>
+              <input
+                class="phno"
+                type="text"
+                name="phone"
+                id="number"
+                data-rule="maxlen:10"
+                data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"
+              />
+              <div class="validation"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="bouton-contact"  onclick="sendEmail()" >
+       Donate
+      </button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      function sendEmail(){
+      Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "varunkulkarni30@gmail.com",
+    Password : "93559108D269D41776040316BB06F4AB0135",
+    To : 'varunkulkarni30@gmail.com',
+    From : "varunkulkarni30@gmail.com",
+    Subject : "This is the subject",
+    Body : "name:"+name
+            +"Email:"+email
+            +"Adress"+address
+            +"Ph No:"+number
+      }).then(
+  message => alert(message)
+);}
+    </script>
+    <!-- Site footer -->
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="/Images/full_logo.png" alt="Logo" class="footer__logo" />
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      let btn = document.querySelector(".bouton-contact");
+       btn.addEventListener("click", async function (e) {
+        e.preventDefault();
+        let user_name = document.querySelector(".name").value;
+        let email = document.querySelector(".email").value;
+        let address = document.querySelector(".address").value;
+        let state = document.querySelector(".state").value;
+        let Ph_no = document.querySelector(".phno").value;
+        console.log(user_name,email,address,state,Ph_no);
+        let resp = await axios.post('/auth/signup',{user_name,email,address,state,Ph_no});
+        console.log(resp);
+      });
+    </script>
+  </body>
+</html>
