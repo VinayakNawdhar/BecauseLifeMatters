@@ -143,7 +143,8 @@
   }
   .nav__link img:hover{
     transform: translateY(3px);
-    box-shadow: 0.1px 0.1px 10px 10px #837e7e8c;
+    box-shadow: 0.1px 0.1px 10px 10px #d8565680;
+    height: 55px;
   }
   /* nav and stickly class at the same time */
   .nav.sticky {
@@ -729,3 +730,20 @@
     text-decoration: none;
     color:#333;
   }
+
+  .preloader{
+    position: relative;
+    left: 45%;
+    top: 35%;
+    z-index: 2000;
+  
+  }
+  .preloader-container{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    top: 0px;
+    background-color: rgb(244, 243, 243);
+  }
+  

@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/blood_donation/blood.css" />
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
+    <script defer src="/blood_donation/blood.js"></script>
   </head>
 
   <body>
@@ -73,27 +74,27 @@
       <h2>Blood Count</h1>
       <div class="blood-counter">
         <span>B+</span>
-        <div class="counter-border"><div class="counter bpos"></div></div>
+        <div class="counter-border"><div class="counter bpos"></div></div><span class="bposper">10</span>
       </div>
       <div class="blood-counter">
         <span>A+</span>
-        <div class="counter-border"><div class="counter apos"></div></div>
+        <div class="counter-border"><div class="counter apos"></div></div><span class="aposper">40</span>
       </div>
       <div class="blood-counter">
         <span>A-</span>
-        <div class="counter-border"><div class="counter aneg"></div></div>
+        <div class="counter-border"><div class="counter aneg"></div></div><span class="anegper">50</span>
       </div>
       <div class="blood-counter">
         <span>O+</span>
-        <div class="counter-border"><div class="counter opos"></div></div>
+        <div class="counter-border"><div class="counter opos"></div></div><span class="oposper">90 %</span>
       </div>
       <div class="blood-counter">
         <span>O-</span>
-        <div class="counter-border"><div class="counter oneg"></div></div>
+        <div class="counter-border"><div class="counter oneg"></div></div><span class="onegper">10</span>
       </div>
       <div class="blood-counter">
         <span>AB+</span>
-        <div class="counter-border"><div class="counter abpos"></div></div>
+        <div class="counter-border"><div class="counter abpos"></div></div><span class="abposper">16</span>
       </div>
     </div>
     <div class="buttons">
@@ -152,6 +153,6 @@
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"
   ></script>
-  <script src="/blood_donation/blood.js"></script>
+  
   </body>
 </html>
