@@ -747,3 +747,20 @@
     background-color: rgb(244, 243, 243);
   }
   
+  .Subscribe-btn{
+    border: none;
+    position: absolute;
+    left: 26.5vh;
+    top: 75vh;
+    background-color: transparent;
+  }
+  .Subscribe-btn a{
+    text-decoration: none;
+    color:#444;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+  }
+  .Subscribe-btn a:hover{
+    font-size: 3rem;
+  }
