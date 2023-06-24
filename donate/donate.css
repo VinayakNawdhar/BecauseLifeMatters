@@ -628,3 +628,7 @@ ul {
   .dropdown-menu{
     background: transparent;
   }
+
+  .table img{
+    height: 10px;
+  }
