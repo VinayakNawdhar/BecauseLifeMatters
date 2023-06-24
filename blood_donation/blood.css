@@ -815,7 +815,7 @@ ul {
     padding: 30px;
   }
   .counter{
-    background-color: red;
+    background-color: rgba(225, 24, 13, 0.656);
     height: 100%;
     width: 50%;
   }
@@ -849,6 +849,10 @@ ul {
     color: rgb(0, 0, 0);
     text-decoration: none;
     background-color: #5EC576;
+  }
+  .buttons button a:hover{
+    color: #5EC576;
+    background-color: #333;
   }
   .bpos{
     width: 40%;
