@@ -323,11 +323,11 @@
   }
   
   .operations__tab--1 {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
   }
   
   .operations__tab--1:hover {
-    background-color: var(--color-secondary-darker);
+    background-color: var(--color-primary-darker);
   }
   
   .operations__tab--3 {
