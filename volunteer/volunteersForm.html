@@ -327,29 +327,30 @@
           </div>
         </div>
       </div>
+      <script>
+        function sendEmail(){
+        Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "varunkulkarni30@gmail.com",
+      Password : "93559108D269D41776040316BB06F4AB0135",
+      To : document.getElementById("email").value,
+      From : "varunkulkarni30@gmail.com",
+      Subject : "This is the subject",
+      Body : {
+          "name:" : document.getElementById("Name").value ,
+          "email" : document.getElementById("email").value,
+          "state": document.getElementById("country-state").value
+      }
+        }).then(
+    message => alert("Email sent")
+  );}
+      </script>
       <button class="bouton-contact"  onclick="sendEmail()"style="background-color: #049c04 ">
         Send
       </button>
     </form>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script>
-      function sendEmail(){
-      Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "varunkulkarni30@gmail.com",
-    Password : "93559108D269D41776040316BB06F4AB0135",
-    To : document.getElementById("email").value,
-    From : "varunkulkarni30@gmail.com",
-    Subject : "This is the subject",
-    Body : {
-        "name:" : document.getElementById("Name").value ,
-        "email" : document.getElementById("email").value,
-        "state": document.getElementById("country-state").value
-    }
-      }).then(
-  message => alert("Email sent")
-);}
-    </script>
+  
     <!-- Site footer -->
 
     <footer class="footer">
