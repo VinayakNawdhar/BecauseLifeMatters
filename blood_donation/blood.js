@@ -1,5 +1,10 @@
 'use strict';
 
+window.addEventListener('load',function(){
+  document.querySelector(".preloader").style.display = "none";
+  document.querySelector(".preloader-container").style.display = "none";
+})
+
 // Modal Window
 const header = document.querySelector(".header");
 const section1 = document.querySelector('#section--1');

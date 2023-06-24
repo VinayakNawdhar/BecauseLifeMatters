@@ -1,7 +1,10 @@
 'use strict';
 
 // prettier-ignore
-
+window.addEventListener('load',function(){
+  document.querySelector(".preloader").style.display = "none";
+  document.querySelector(".preloader-container").style.display = "none";
+})
 
 class Workout {
   date = new Date();
