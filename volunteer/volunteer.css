@@ -127,13 +127,13 @@
   }
   .dropdown-item{
     /* border: 1px solid black; */
-    background-color: transparent;
+    background-color: #f3f3f3;
     font-size: 1.5rem;
     width: 120px;
     text-align: center;
   }
   .dropdown-menu{
-    background: transparent;
+    background: inherit;
   }
 
   .carousel{
