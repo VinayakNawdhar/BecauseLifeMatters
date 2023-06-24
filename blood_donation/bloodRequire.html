@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>DONATION FORM</title>
+    <title>REQUIRE FORM</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="images/images/logo.jpg" />
@@ -67,7 +67,7 @@
           </li>
         </ul>
       </nav>
-    <h1>Blood donation form</h1>
+    <h1>Blood Require form</h1>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <div class="contentform">
@@ -92,7 +92,7 @@
 
         
         <div class="form-group">
-          <p>Address <span>*</span></p>
+          <p>Hospital Name <span>*</span></p>
           <span class="icon-case"
             ><i
               class="fa fa-location-arrow"
@@ -110,19 +110,20 @@
         </div>
 
         <div class="form-group">
-          <p>Tell us about Yourself..<span>*</span></p>
+          <p>Liters:<span>*</span></p>
           <span class="icon-case"
             ><i
               class="fas fa-user-edit"
               style="font-size: 25px; padding-top: 20%"
             ></i
           ></span>
-          <textarea
+          <input
+            class="address"
             type="text"
-            name="postal"
-            id="data1"
+            name="adresse"
+            id="address"
             data-rule="required"
-          ></textarea>
+          />
           <div class="validation"></div>
         </div>
       </div>
@@ -140,6 +141,25 @@
           <option value="DN">O-</option>
           
         </select>
+        <div class="form-group">
+            <p>City<span>*</span></p>
+            <span class="icon-case"
+              ><i
+                class="fas fa-user-edit"
+                style="font-size: 25px; padding-top: 20%"
+              ></i
+            ></span>
+            <input
+            class="address"
+            type="text"
+            name="adresse"
+            id="address"
+            data-rule="required"
+          />
+            
+            <div class="validation"></div>
+          </div>
+        </div>
         <div>
           <div class="form-group">
             <p>Phone number <span>*</span></p>
@@ -205,8 +225,7 @@
     From : "varunkulkarni30@gmail.com",
     Subject : "This is the subject",
     Body : "name:"+name
-            +"Email:"+email
-            +"Adress"+address
+            +"Hospital Name:"+address
             +"Ph No:"+number
       }).then(
   message => alert(message)
