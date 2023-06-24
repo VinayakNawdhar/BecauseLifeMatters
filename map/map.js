@@ -75,7 +75,7 @@ class App {
       let eventsObj = new Workout(
         inputTask.value,
         inputLocation.value,
-        +inputDuration.value,
+        inputDuration.value,
         inputTiming.value,
         this.#mapEvent.latlng,
         `${inputTask.value.toUpperCase()} at ${inputTiming.value}`
@@ -97,25 +97,26 @@ class App {
       .addTo(this.#map)
       .bindPopup(
         L.popup({
-          maxWidth: 300,
-          minWidth: 200,
+          maxWidth: 200,
+          minWidth: 100,
           autoClose: false,
           closeOnClick: false,
           closeButton: false,
           className: 'running-popup',
         }).setContent(
-          eventsObj.description
+          (eventsObj.duration).toUpperCase()
         )
       )
       .openPopup();
   }
 
   _addField(eventsObj) {
+    // console.log(eventsObj);
     const phno = eventsObj.timing;
     form.insertAdjacentHTML(
       'afterend',
       `<li class="workout workout--running" data-id="${eventsObj.id}">
-    <h2 class="workout__title">${eventsObj.task} at exact ${
+    <h2 class="workout__title">${eventsObj.task} @ ${
         eventsObj.timing
       }</h2>
     <div class="workout__details">
@@ -125,6 +126,11 @@ class App {
     <div class="workout__details">
       <span class="workout__icon">📞</span>
       <span class="workout__value">${phno}</span>
+      <span class="workout__unit"></span>
+    </div>
+    <div class="workout__details">
+      <span class="workout__icon">🏥</span>
+      <span class="workout__value">${eventsObj.duration}</span>
       <span class="workout__unit"></span>
     </div>
   </li>`
@@ -143,7 +149,7 @@ _setLocalStorage(){
 _getLocalStorage(){
   if (localStorage.getItem('vinayak')) {
     this.#events = JSON.parse(localStorage.getItem('vinayak'));
-    console.log(this.#events);
+    // console.log(this.#events);
     for(let i=0;i<this.#events.length;i++){
       this._addField(this.#events[i]);
       this._renderWorkoutMarker(this.#events[i]);

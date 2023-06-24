@@ -93,7 +93,7 @@ a:visited {
 .workout__details {
   display: flex;
   align-items: baseline;
-  width: 200px;
+  width: 100px;
 }
 
 .workout__icon {

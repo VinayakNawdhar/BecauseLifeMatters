@@ -69,6 +69,36 @@
       </nav>
     <h1>Blood donation form</h1>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<<<<<<< Updated upstream:blood_donation/bloodForm.html
+=======
+    <div class="blood-counter-container">
+      <h2>Blood Count</h1>
+      <div class="blood-counter">
+        <span>B+</span>
+        <div class="counter-border"><div class="counter"></div></div>
+      </div>
+      <div class="blood-counter">
+        <span>A+</span>
+        <div class="counter-border"><div class="counter"></div></div>
+      </div>
+      <div class="blood-counter">
+        <span>A-</span>
+        <div class="counter-border"><div class="counter"></div></div>
+      </div>
+      <div class="blood-counter">
+        <span>O+</span>
+        <div class="counter-border"><div class="counter"></div></div>
+      </div>
+      <div class="blood-counter">
+        <span>O-</span>
+        <div class="counter-border"><div class="counter"></div></div>
+      </div>
+      <div class="blood-counter">
+        <span>AB+</span>
+        <div class="counter-border"><div class="counter"></div></div>
+      </div>
+    </div>
+>>>>>>> Stashed changes:blood_donation/blood.html
 
     <div class="contentform">
       <div class="leftcontact">
@@ -211,20 +241,7 @@
   message => alert(message)
 );}
     </script>
-    <script>
-      let btn = document.querySelector(".bouton-contact");
-       btn.addEventListener("click", async function (e) {
-        e.preventDefault();
-        let user_name = document.querySelector(".name").value;
-        let email = document.querySelector(".email").value;
-        let address = document.querySelector(".address").value;
-        let state = document.querySelector(".state").value;
-        let Ph_no = document.querySelector(".phno").value;
-        console.log(user_name,email,address,state,Ph_no);
-        let resp = await axios.post('/auth/signup',{user_name,email,address,state,Ph_no});
-        console.log(resp);
-      });
-    </script>
+    
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
