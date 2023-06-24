@@ -69,9 +69,106 @@
       </nav>
     <h1>Blood donation form</h1>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-      
 
-    <!-- <footer class="footer">
+    <div class="contentform">
+      <div class="leftcontact">
+        <div class="form-group">
+          <p>Name <span>*</span></p>
+          <span class="icon-case"
+            ><i
+              class="fa fa-user"
+              style="font-size: 25px; padding-top: 20%"
+            ></i
+          ></span>
+          <input
+            type="text"
+            name="prenom"
+            id="Name"
+            data-rule="required"
+            class="name"
+          />
+          <div class="validation"></div>
+        </div>
+
+        
+        <div class="form-group">
+          <p>Address <span>*</span></p>
+          <span class="icon-case"
+            ><i
+              class="fa fa-location-arrow"
+              style="font-size: 25px; padding-top: 20%"
+            ></i
+          ></span>
+          <input
+            class="address"
+            type="text"
+            name="adresse"
+            id="address"
+            data-rule="required"
+          />
+          <div class="validation"></div>
+        </div>
+
+        <div class="form-group">
+          <p>Tell us about Yourself..<span>*</span></p>
+          <span class="icon-case"
+            ><i
+              class="fas fa-user-edit"
+              style="font-size: 25px; padding-top: 20%"
+            ></i
+          ></span>
+          <textarea
+            type="text"
+            name="postal"
+            id="data1"
+            data-rule="required"
+          ></textarea>
+          <div class="validation"></div>
+        </div>
+      </div>
+
+      <div class="rightcontact" data-rule="required">
+        <!--- India states -->
+        <p>Blood group</p>
+        <select id="Blood group" class="blood group" name="country-state">
+          <option value="">Select Blood group</option>
+          <option value="AN">A+</option>
+          <option value="AP">A-</option>
+          <option value="AR">B+</option>
+          <option value="BR">AB+</option>
+          <option value="CT">O+</option>
+          <option value="DN">O-</option>
+          
+        </select>
+        <div>
+          <div class="form-group">
+            <p>Phone number <span>*</span></p>
+            <span class="icon-case"
+              ><i
+                class="fa fa-phone"
+                style="font-size: 25px; padding-top: 20%"
+              ></i
+            ></span>
+            <input
+              class="phno"
+              type="text"
+              name="phone"
+              id="number"
+              data-rule="maxlen:10"
+              data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"
+            />
+            <div class="validation"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="bouton-contact"  onclick="sendEmail()"style="background-color: #049c04 ">
+      Donate
+    </button>
+      
+        
+
+    <footer class="footer">
       <ul class="footer__nav">
         <li class="footer__item">
           <a class="footer__link" href="#">About</a>
@@ -96,7 +193,7 @@
         </li>
       </ul>
       <img src="/Images/full_logo.png" alt="Logo" class="footer__logo" />
-    </footer> -->
+    </footer> 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
       function sendEmail(){
