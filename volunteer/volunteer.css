@@ -54,7 +54,15 @@
     height: 10rem;
     transition: all 0.3s;
   }
-  
+  .nav__link img{
+    height: 50px;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+  }
+  .nav__link img:hover{
+    transform: translateY(3px);
+    box-shadow: 0.1px 0.1px 10px 10px #837e7e8c;
+  }
   .nav__links {
     display: flex;
     align-items: center;
