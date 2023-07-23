@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
   <link rel="stylesheet" href="./index.css" />
   <title>BecauseLifeMatters | A tech-driven solution that enhaces disaster preparedness</title>
 
@@ -17,492 +18,490 @@
 </head>
 
 <body>
-  <header class="header">
-    <nav class="nav">
-      <img src="./Images/full_logo.png" alt="Bankist logo" class="nav__logo" id="logo" />
-      <ul class="nav__links">
-        <li class="nav__item">
-          <a class="nav__link" href="#section--1">News</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#section--2">Alerts</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#section--3">Precautions</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="/volunteer/volunteers.html" target="_blank">Volunteers</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="https://sachet.ndma.gov.in/" target="_blank">SACHET-NDMA</a>
-        </li>
-        </li>
-        <li class="nav__item">
-          <div class="btn-group">
-            <button type="button" class="btn-danger dropdown-toggle nav__link" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Supplies
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/map/map.html" target="_blank">Safe Homes</a></li>
-              <li><a class="dropdown-item" href="#">Medical</a></li>
-              <li><a class="dropdown-item" href="#">Grocery</a></li>
-              <li><a class="dropdown-item" href="#">Survival Kit</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link nav__link--btn" href="/donate/donation.html">Donate</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="/blood_donation/bloodForm.html" target="_blank"><img src="./Images/volunteer-img-2.png" alt=""></a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="header__title">
-      <h1>
-        Disaster
-        <!-- Green highlight effect -->
-        <span class="highlight">Strikes</span>
-        ,we recover - You
-        <span class="highlight">thrive!</span>
-      </h1>
-      <h4>A tech-driven solution that enhances disaster preparedness.</h4>
-      <button class="btn--text"><a href="/upload/upload.html" target="_blank">Report A Disaster </a>&DownArrow;</button>
-      <img src="./Images/full_logo.png" class="header__img" alt="Minimalist bank items" />
-    </div>
-    <button class="Subscribe-btn"><a href="/Public/subsribe.html" target="_blank" class="highlight">Subscribe to Alerts!</a></button>
-  </header>
-
-  <section class="section" id="section--1">
-    <div class="section__title">
-      <h2 class="section__description">News</h2>
-      <h4 class="section__header" style="font-size: 16px; width:60vw;">
-        Twitter is a popular social media platform with more than 1 million daily active users. Mostly, all breaking news is posted earlier in twitter than any mainstream media. Hence, this microblogging social network experiences a deluge of information flow during natural disasters.
-      </h3>
-    </div>
-      <div class="twitter-handle">
-        <div id="ember141" class="col-sm-4 ember-view">
-          <div id="ember142" class="social-media-card ember-view">
-            <div id="ember143" class="twitter-timeline-embed ember-view">
-              <div class="twitter-timeline twitter-timeline-rendered" style="
-                  display: flex;
-                  max-width: 100%;
-                  margin-top: 0px;
-                  margin-bottom: 0px;
-                ">
-                <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true"
-                  allowfullscreen="true" class="" style="
-                    position: static;
-                    visibility: visible;
-                    width: 300px;
-                    height: 500px;
-                    display: block;
-                    flex-grow: 1;
-                  " title="Twitter Timeline"
-                  src="https://syndication.twitter.com/srv/timeline-profile/screen-name/nidmmhaindia?dnt=true&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&amp;frame=false&amp;hideBorder=false&amp;hideFooter=true&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=en&amp;maxHeight=500px&amp;origin=https%3A%2F%2Fnpgeo-corona-npgeo-de.hub.arcgis.com%2F&amp;sessionId=337c7d26d05fb1d693c83b5767ffb20356aeb9c4&amp;showHeader=true&amp;showReplies=false&amp;theme=light&amp;transparent=false&amp;widgetsVersion=aaf4084522e3a%3A1674595607486"></iframe>
-              </div>
+  <div class="main">
+    <header class="header">
+      <nav class="nav">
+        <img src="./Images/full_logo.png" alt="Bankist logo" class="nav__logo" id="logo" />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">News</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Alerts</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Precautions</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="/volunteer/volunteers.html" target="_blank">Volunteers</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="https://sachet.ndma.gov.in/" target="_blank">SACHET-NDMA</a>
+          </li>
+          </li>
+          <li class="nav__item">
+            <div class="btn-group">
+              <button type="button" class="btn-danger dropdown-toggle nav__link" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Supplies
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/map/map.html" target="_blank">Safe Homes</a></li>
+                <li><a class="dropdown-item" href="#">Medical</a></li>
+                <li><a class="dropdown-item" href="#">Grocery</a></li>
+                <li><a class="dropdown-item" href="#">Survival Kit</a></li>
+              </ul>
             </div>
-          </div>
-        </div>
-        <div id="ember145" class="col-sm-4 ember-view">
-          <div id="ember146" class="social-media-card ember-view">
-            <div id="ember147" class="twitter-timeline-embed ember-view">
-              <div class="twitter-timeline twitter-timeline-rendered" style="
-                  display: flex;
-                  max-width: 100%;
-                  margin-top: 0px;
-                  margin-bottom: 0px;
-                ">
-                <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true"
-                  allowfullscreen="true" class="" style="
-                    position: static;
-                    visibility: visible;
-                    width: 300px;
-                    height: 500px;
-                    display: block;
-                    flex-grow: 1;
-                  " title="Twitter Timeline"
-                  src="https://syndication.twitter.com/srv/timeline-profile/screen-name/NDRFHQ?dnt=true&amp;embedId=twitter-widget-1&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&amp;frame=false&amp;hideBorder=false&amp;hideFooter=true&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=en&amp;maxHeight=500px&amp;origin=https%3A%2F%2Fnpgeo-corona-npgeo-de.hub.arcgis.com%2F&amp;sessionId=337c7d26d05fb1d693c83b5767ffb20356aeb9c4&amp;showHeader=true&amp;showReplies=false&amp;theme=light&amp;transparent=false&amp;widgetsVersion=aaf4084522e3a%3A1674595607486"></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="ember145" class="col-sm-4 ember-view">
-          <div id="ember146" class="social-media-card ember-view">
-            <div id="ember147" class="twitter-timeline-embed ember-view">
-              <div class="twitter-timeline twitter-timeline-rendered" style="
-                  display: flex;
-                  max-width: 100%;
-                  margin-top: 0px;
-                  margin-bottom: 0px;
-                ">
-                <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true"
-                  allowfullscreen="true" class="" style="
-                    position: static;
-                    visibility: visible;
-                    width: 300px;
-                    height: 500px;
-                    display: block;
-                    flex-grow: 1;
-                  " title="Twitter Timeline"
-                  src="https://syndication.twitter.com/srv/timeline-profile/screen-name/ndmaindia?dnt=true&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&amp;frame=false&amp;hideBorder=false&amp;hideFooter=true&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=en&amp;maxHeight=500px&amp;origin=https%3A%2F%2Fnpgeo-corona-npgeo-de.hub.arcgis.com%2F&amp;sessionId=337c7d26d05fb1d693c83b5767ffb20356aeb9c4&amp;showHeader=true&amp;showReplies=false&amp;theme=light&amp;transparent=false&amp;widgetsVersion=aaf4084522e3a%3A1674595607486"></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="ember149" class="col-sm-4 ember-view">
-          <div id="ember150" class="social-media-card ember-view">
-            <div id="ember151" class="twitter-timeline-embed ember-view">
-              <div class="twitter-timeline twitter-timeline-rendered"
-                style="display: flex; max-width: 100%; margin-top: 0px; margin-bottom: 0px;"><iframe
-                  id="twitter-widget-2" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"
-                  class=""
-                  style="position: static; visibility: visible; width: 300px; height: 500px; display: block; flex-grow: 1;"
-                  title="Twitter Timeline"
-                  src="https://syndication.twitter.com/srv/timeline-profile/screen-name/SEOC_Karnataka?dnt=true&amp;embedId=twitter-widget-2&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&amp;frame=false&amp;hideBorder=false&amp;hideFooter=true&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=en&amp;maxHeight=500px&amp;origin=https%3A%2F%2Fnpgeo-corona-npgeo-de.hub.arcgis.com%2F&amp;sessionId=337c7d26d05fb1d693c83b5767ffb20356aeb9c4&amp;showHeader=true&amp;showReplies=false&amp;theme=light&amp;transparent=false&amp;widgetsVersion=aaf4084522e3a%3A1674595607486"></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn" href="/donate/donation.html">Donate</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="/blood_donation/bloodForm.html" target="_blank"><img src="./Images/volunteer-img-2.png" alt=""></a>
+          </li>
+        </ul>
+      </nav>
+  
+      <div class="header__title">
+        <h1>
+          Disaster
+          <!-- Green highlight effect -->
+          <span class="highlight">Strikes</span>
+          ,we recover - You
+          <span class="highlight">thrive!</span>
+        </h1>
+        <h4>A tech-driven solution that enhances disaster preparedness.</h4>
+        <button class="btn--text"><a href="/upload/upload.html" target="_blank">Report A Disaster </a>&DownArrow;</button>
+        <img src="./Images/full_logo.png" class="header__img" alt="Minimalist bank items" />
       </div>
-    </div>
-    </div>
-  </section>
-
-  <section class="section" id="section--2">
-    <div class="section__title">
-      <h2 class="section__description">Alerts</h2>
-      <h3 class="section__header">
-        You stay alive, only if you stay alert!
-      </h3>
-    </div>
-
-    <div class="operations">
-      <div class="operations__tab-container">
-        <button class="btn operations__tab operations__tab--1 operations__tab--active" data-tab="1">
-          <span>01</span>Safe Zone
-        </button>
-        <button class="btn operations__tab operations__tab--2" data-tab="2">
-          <span>02</span>Orange Alert
-        </button>
-        <button class="btn operations__tab operations__tab--3" data-tab="3">
-          <span>03</span>Red alert
-        </button>
-      </div>
-      <div class="operations__content operations__content--1 operations__content--active">
-        <div class="operations__icon operations__icon--1">
-          <svg>
-            <use xlink:href="./Images/icons.svg#icon-upload"></use>
-          </svg>
-        </div>
-        <h5 class="operations__header">
-          Being safe is like breathing, you never want to stop.
-        </h5>
-        <p>
-          Important Message : You Are Safe! <br>
-          It is crucial to remain in the safe zone until authorities provide further instructions or deem it safe to return home. While you are here, we encourage you to stay connected with our communication channels for regular updates and instructions.
-          Take care of yourself and your loved ones. We will continue to provide updates as the situation progresses. Stay strong and have faith.
-        </p>
-      </div>
-
-      <div class="operations__content operations__content--2">
-        <div class="operations__icon operations__icon--2">
-          <svg>
-            <use xlink:href="./Images/icons.svg#icon-home"></use>
-          </svg>
-        </div>
-        <h5 class="operations__header">
-          Never Underestimate the Impact of a Disaster.
-        </h5>
-        <p>
-          Dear Residents of the Orange Zone,we want to reassure you that there are currently light chances that you may be directly affected by the ongoing disaster.The Orange Zone, has been identified as having relatively lower chances of being directly impacted by the disaster.Even though the likelihood of direct impact is low, it is still important to remain vigilant and be prepared for any unexpected changes. We strongly encourage you to stay informed through official channels and pay attention to updates from local authorities.
-        </p>
-      </div>
-      <div class="operations__content operations__content--3">
-        <div class="operations__icon operations__icon--3">
-          <svg>
-            <use xlink:href="./Images/icons.svg#icon-user-x"></use>
-          </svg>
-        </div>
-        <h5 class="operations__header">
-          PLAN   .   PREPARE   .   EVACUATE
-        </h5>
-        <p>
-          We write to you with grave concern and a heavy heart as we inform you about the imminent threat of a disaster that poses a significant risk to your safety and well-being. Our latest assessments and forecasts indicate that your area, designated as a red zone, is at high risk of being directly affected by this calamity.It is our utmost priority to ensure that you are well-informed and prepared to face the challenges ahead. While we understand that this news may cause anxiety and distress, we strongly urge you to take immediate action to safeguard yourself and your loved ones. Please consider the following urgent measures:
-          1.Evacuation 2.Emergency shelter 3.Emergency supplies 4.Stay Informed 5. Support Network
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="section--3">
-    <div class="section__title section__title--testimonials">
-      <h2 class="section__description">Precautions</h2>
-      <h3 class="section__header">
-        A little bit of awareness can save Hundreds of life.
-      </h3>
-    </div>
-
-    <div class="slider">
-      <div class="slide slide--1">
-        <div class="testimonial">
-          <h5 class="testimonial__header">What are precautions that should be taken during the earthquake?</h5>
-          <blockquote class="testimonial__text">
-
-            Precautions that should be taken during the earthquake are -<br>
-            1. Stay calm! If you're indoors, stay inside. If you're outside, stay outside.<br>
-            2. If you're indoors, stand against a wall near the center of the building, stand in a doorway, or crawl
-            under heavy furniture (a desk or table). Stay away from windows and outside doors.<br>
-            3. Stay away from tall and heavy objects that may fall on you.<br>
-            4. If you are in bed, do not get up. Protect your head with a pillow.<br>
-            5. If you're outdoors, stay in the open away from power lines or anything that might fall. Stay away from
-            buildings (stuff might fall off the building or the building could fall on you).<br>
-            6. Don't use matches, candles, or any flame. Broken gas lines and fire don't mix.<br>
-            7. If you're in a car, stop the car and stay inside the car until the earthquake stops. <br>
-            8. Don't use elevators (they'll probably get stuck anyway).
-
-          </blockquote>
-          <address class="testimonial__author">
-            <img src="./Images/user-1.jpg" alt="" class="testimonial__photo" />
-            <h6 class="testimonial__name">Earthquake</h6>
-            <p class="testimonial__location">Gujurat, 2001</p>
-          </address>
-        </div>
-      </div>
-
-      <div class="slide slide--2">
-        <div class="testimonial">
-          <h5 class="testimonial__header">
-            What are precautions that should be taken during the flood?
-          </h5>
-          <blockquote class="testimonial__text">
-            Before
-            1. Ignore rumours, stay calm, don’t panic.<br>
-            2. Keep your mobile phones charged for emergency communication; use
-            SMS.<br>
-            3. Listen to radio, watch TV, read newspapers for weather updates.<br>
-            4. Keep cattle/animals untied to ensure their safety.<br>
-            5. Prepare an emergency kit with essential items for safety and survival.<br>
-            6. Keep your documents and valuables in water-proof bags.<br>
-            7. Know the safe routes to nearest shelter/raised pucca house.<br>
-            8. Evacuate immediately to safe places when directed by government<br>
-            officials.<br>
-            9. Store enough ready-to-eat food and water for at least a week.<br>
-            10. Be aware of flash flood areas such as canals, streams, drainage channels
-            During<br>
-            11. Don’t enter floodwaters. In case you need to, wear suitable footwear.<br>
-            12. Stay away from sewerage lines, gutters, drains, culverts, etc.<br>
-            13. Stay away from electric poles and fallen power lines to avoid electrocution.<br>
-            14. Mark any open drains or manholes with visible signs (red flags or
-            barricades).<br>
-            15. Do not walk or drive in the flood waters. Remember, two feet of moving
-            flood water can wash away big cars as well.<br>
-            16. Eat freshly cooked or dry food. Keep your food covered.<br>
-            17. Drink boiled/chlorinated water.<br>
-            18. Use disinfectants to keep your surroundings clean.<br>
-
-            After
-            1. Do not allow children to play in or near flood waters.<br>
-            2. Don’t use any damaged electrical goods, get them checked.<br>
-            3. If instructed, turn off utilities at main switches and unplug appliances - do
-            not touch electrical equipment if wet.<br>
-            4. Watch out for broken electric poles and wires, sharp objects and debris.<br>
-            5. Do not eat food that has been in flood waters.<br>
-            6. Use mosquito nets to prevent malaria.<br>
-            7. Be careful of snakes as snake bites are common during floods.<br>
-            8. Don’t use the toilet or tap water if the water lines / sewage pipes are<br>
-            damaged.<br>
-            9. Do not drink tap water until advised by the Health Department that the
-            water is safe to drink..<br>
-          </blockquote>
-          <address class="testimonial__author">
-            <img src="./Images/user-2.jpg" alt="" class="testimonial__photo" />
-            <h6 class="testimonial__name">Flood</h6>
-            <p class="testimonial__location">Kerala, 2019</p>
-          </address>
-        </div>
-      </div>
-
-      <div class="slide slide--3">
-        <div class="testimonial">
-          <h5 class="testimonial__header">
-            Dos and Dont's Cyclone
-          </h5>
-          <blockquote class="testimonial__text">
-            Dos
-            1. Check houses, secure loose tiles by cementing wherever necessary, repair
-            doors and windows.<br>
-            2. Check the area around the house. Remove dead or dying trees, anchor
-            removable objects like lumber piles, loose bricks, garbage cans, signboards, loose zinc sheets etc.<br>
-            3. Keep some wooden boards ready so that glass windows can be boarded.<br>
-            4. If you do not have wooden boards handy, paste paper strips on glasses to
-            prevent splinters flying into the house.<br>
-            5. Keep a hurricane Lantern filled with kerosene, flash light and enough dry
-            cells and keep them handy.<br>
-            6. Promptly demolish condemned buildings.<br>
-            7. Those who have radio sets should ensure that the radio is fully serviceable
-            In the case of transistors an extra set of batteries should be kept handy.<br>
-            8. Keep your radio on and listen to latest weather warnings and advisories
-            from the nearest AIR station. Pass the information to others.<br>
-            9. Pass only the official information you have got from the radio to others.<br>
-            10. Get away from low lying beaches or other locations which may be swept
-            by high tides or storm waves. Leave sufficiently early before your way to
-            high ground gets flooded. Do not delay and run the risk of being marooned.<br>
-            11. If your house is out of danger from high tides and flooding from the river,
-            and it is well built, it is then probably the best place. However, please act
-            promptly if asked to evacuate.<br>
-            12. Be alert for high water in areas where streams of rivers may flood due to
-            heavy rains.<br>
-            13. Get extra food, especially things which can be eaten without cooking or
-            with very little preparation. Store extra drinking water in suitably covered
-            vessel.<br>
-
-          </blockquote>
-          <address class="testimonial__author">
-            <img src="./Images/user-3.jpg" alt="" class="testimonial__photo" />
-            <h6 class="testimonial__name">Cyclone</h6>
-            <p class="testimonial__location">Biparjoy, 2023</p>
-          </address>
-        </div>
-      </div>
-
-
-
-
-      <div class="slide slide--4">
-        <div class="testimonial">
-          <h5 class="testimonial__header">
-            What to Do if a Landslide Is Likely to Hit Your Area?
-
-          </h5>
-          <blockquote class="testimonial__text">
-            Shift to safer land.
-            Take all your valuables and documents with you.
-            Inform your neighbours and relatives residing in that area.
-            Take out your pets and vehicles to a safer place.
-            Evacuate the place.
-            In case escaping out is not possible, then protect your head.
-            Stay alert and awake to take an instant action in case of potential danger.
-            If you live in a landslide-prone area, make sure to plant sturdy vegetation on slopes which might help in
-            preventing erosion.
-            Watch out for any cracks on your building or any tilted poles/trees.
-            Don’ts
-            Don’t disobey the Government's instruction.
-            Try to avoid the predicted path of the landslide.
-            Report any assistance required for injured people to official rescue authorities.
-
-            <b>Do's and Don'ts During a Landslide</b>
-            The primary thing to do is stop panicking and obeying Government instructions during the emergency period.
-
-            What to Do During a Landslide?
-            If you stay in a landslide-prone area, then try to evacuate the place as early as possible.
-            Be aware of unusual cracking or rolling of huge stones.
-            Keep a watch on the water in the stream or channel. A rise in water level or transformation of colour from
-            clear to muddy can be alarming.
-            Stay out of the path of debris or landslides.
-            Keep watch on the road for mud blocks or debris overflow.
-            Try to connect with the local authority for relief or help.
-            Make your neighbours aware of the calamity.
-            Just take your necessary documents and valuables with you.
-            Prioritize your life more than your furniture at home or vehicles on the road.
-            What Not to Do During a Landslide?
-            Don't drive during the landslide.
-            Don’t cross any stream or flooding river.
-            Do not ignore damp areas or any mark of cracks on roads and buildings.
-            Do not get close to any loose electrical wiring or pole.
-            Avoid obstructing the path of a steep slope by placing waste materials or debris.
-
-          </blockquote>
-          <address class="testimonial__author">
-            <img src="./Images/user-4.jpg" alt="" class="testimonial__photo" />
-            <h6 class="testimonial__name">Landslide</h6>
-            <p class="testimonial__location">Manipur, 2022</p>
-          </address>
-        </div>
-      </div>
-
-      <!-- <div class="slide"><img src="img/img-1.jpg" alt="Photo 1" /></div>
-        <div class="slide"><img src="img/img-2.jpg" alt="Photo 2" /></div>
-        <div class="slide"><img src="img/img-3.jpg" alt="Photo 3" /></div>
-        <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div>-->
-        <button class="slider__btn slider__btn--left">&larr;</button>
-        <button class="slider__btn slider__btn--right">&rarr;</button>
-        <div class="dots"></div>
-      </div>
-    </section>
- 
-    <section class="section section--sign-up">
+      <button class="Subscribe-btn"><a href="/Public/subsribe.html" target="_blank" class="highlight">Subscribe to Alerts!</a></button>
+    </header>
+    <section class="section" id="section--1">
       <div class="section__title">
-        <h3 class="section__header">
-         Kindness is like Boomerang, always returns.
+        <h2 class="section__description">News</h2>
+        <h4 class="section__header" style="font-size: 16px; width:60vw;">
+          Twitter is a popular social media platform with more than 1 million daily active users. Mostly, all breaking news is posted earlier in twitter than any mainstream media. Hence, this microblogging social network experiences a deluge of information flow during natural disasters.
         </h3>
       </div>
-      
-      <button class="btn"><a target="_blank" href="/volunteer/volunteersForm.html">Register as partner 🤝</a></button>
+        <div class="twitter-handle">
+          <div id="ember141" class="col-sm-4 ember-view">
+            <div id="ember142" class="social-media-card ember-view">
+              <div id="ember143" class="twitter-timeline-embed ember-view">
+                <div class="twitter-timeline twitter-timeline-rendered" style="
+                    display: flex;
+                    max-width: 100%;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                  ">
+                  <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true"
+                    allowfullscreen="true" class="" style="
+                      position: static;
+                      visibility: visible;
+                      width: 300px;
+                      height: 500px;
+                      display: block;
+                      flex-grow: 1;
+                    " title="Twitter Timeline"
+                    src="https://syndication.twitter.com/srv/timeline-profile/screen-name/nidmmhaindia?dnt=true&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&amp;frame=false&amp;hideBorder=false&amp;hideFooter=true&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=en&amp;maxHeight=500px&amp;origin=https%3A%2F%2Fnpgeo-corona-npgeo-de.hub.arcgis.com%2F&amp;sessionId=337c7d26d05fb1d693c83b5767ffb20356aeb9c4&amp;showHeader=true&amp;showReplies=false&amp;theme=light&amp;transparent=false&amp;widgetsVersion=aaf4084522e3a%3A1674595607486"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="ember145" class="col-sm-4 ember-view">
+            <div id="ember146" class="social-media-card ember-view">
+              <div id="ember147" class="twitter-timeline-embed ember-view">
+                <div class="twitter-timeline twitter-timeline-rendered" style="
+                    display: flex;
+                    max-width: 100%;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                  ">
+                  <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true"
+                    allowfullscreen="true" class="" style="
+                      position: static;
+                      visibility: visible;
+                      width: 300px;
+                      height: 500px;
+                      display: block;
+                      flex-grow: 1;
+                    " title="Twitter Timeline"
+                    src="https://syndication.twitter.com/srv/timeline-profile/screen-name/NDRFHQ?dnt=true&amp;embedId=twitter-widget-1&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&amp;frame=false&amp;hideBorder=false&amp;hideFooter=true&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=en&amp;maxHeight=500px&amp;origin=https%3A%2F%2Fnpgeo-corona-npgeo-de.hub.arcgis.com%2F&amp;sessionId=337c7d26d05fb1d693c83b5767ffb20356aeb9c4&amp;showHeader=true&amp;showReplies=false&amp;theme=light&amp;transparent=false&amp;widgetsVersion=aaf4084522e3a%3A1674595607486"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="ember145" class="col-sm-4 ember-view">
+            <div id="ember146" class="social-media-card ember-view">
+              <div id="ember147" class="twitter-timeline-embed ember-view">
+                <div class="twitter-timeline twitter-timeline-rendered" style="
+                    display: flex;
+                    max-width: 100%;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                  ">
+                  <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true"
+                    allowfullscreen="true" class="" style="
+                      position: static;
+                      visibility: visible;
+                      width: 300px;
+                      height: 500px;
+                      display: block;
+                      flex-grow: 1;
+                    " title="Twitter Timeline"
+                    src="https://syndication.twitter.com/srv/timeline-profile/screen-name/ndmaindia?dnt=true&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&amp;frame=false&amp;hideBorder=false&amp;hideFooter=true&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=en&amp;maxHeight=500px&amp;origin=https%3A%2F%2Fnpgeo-corona-npgeo-de.hub.arcgis.com%2F&amp;sessionId=337c7d26d05fb1d693c83b5767ffb20356aeb9c4&amp;showHeader=true&amp;showReplies=false&amp;theme=light&amp;transparent=false&amp;widgetsVersion=aaf4084522e3a%3A1674595607486"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="ember149" class="col-sm-4 ember-view">
+            <div id="ember150" class="social-media-card ember-view">
+              <div id="ember151" class="twitter-timeline-embed ember-view">
+                <div class="twitter-timeline twitter-timeline-rendered"
+                  style="display: flex; max-width: 100%; margin-top: 0px; margin-bottom: 0px;"><iframe
+                    id="twitter-widget-2" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"
+                    class=""
+                    style="position: static; visibility: visible; width: 300px; height: 500px; display: block; flex-grow: 1;"
+                    title="Twitter Timeline"
+                    src="https://syndication.twitter.com/srv/timeline-profile/screen-name/SEOC_Karnataka?dnt=true&amp;embedId=twitter-widget-2&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&amp;frame=false&amp;hideBorder=false&amp;hideFooter=true&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=en&amp;maxHeight=500px&amp;origin=https%3A%2F%2Fnpgeo-corona-npgeo-de.hub.arcgis.com%2F&amp;sessionId=337c7d26d05fb1d693c83b5767ffb20356aeb9c4&amp;showHeader=true&amp;showReplies=false&amp;theme=light&amp;transparent=false&amp;widgetsVersion=aaf4084522e3a%3A1674595607486"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
-
-    <footer class="footer">
-      <ul class="footer__nav">
-        <li class="footer__item">
-          <a class="footer__link" href="#">About</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Pricing</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Terms of Use</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Privacy Policy</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Careers</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Blog</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Contact Us</a>
-        </li>
-      </ul>
-      <img src="./Images/full_logo.png" alt="Logo" class="footer__logo" />
-      <p class="footer__copyright">
-        &copy; Copyright by
-        <a
-          class="footer__link twitter-link"
-          target="_blank"
-          href="https://www.linkedin.com/in/vinayaknawdhar/"
-          >BecauseLifeMatters</a
-        >
-        . Thanks for reading till end bud!
-      </p>
-    </footer>
-
-    <div class="modal hidden">
-      <button class="btn--close-modal">&times;</button>
-      <h2 class="modal__header">
-        Open your bank account <br />
-        in just <span class="highlight">5 minutes</span>
-      </h2>
-      <form class="modal__form">
-        <label>First Name</label>
-        <input type="text" />
-        <label>Last Name</label>
-        <input type="text" />
-        <label>Email Address</label>
-        <input type="email" />
-        <button class="btn">Next step &rarr;</button>
-      </form>
-    </div>
-  </section>
+  
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Alerts</h2>
+        <h3 class="section__header">
+          You stay alive, only if you stay alert!
+        </h3>
+      </div>
+  
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button class="btn operations__tab operations__tab--1 operations__tab--active" data-tab="1">
+            <span>01</span>Safe Zone
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Orange Alert
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Red alert
+          </button>
+        </div>
+        <div class="operations__content operations__content--1 operations__content--active">
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="./Images/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Being safe is like breathing, you never want to stop.
+          </h5>
+          <p>
+            Important Message : You Are Safe! <br>
+            It is crucial to remain in the safe zone until authorities provide further instructions or deem it safe to return home. While you are here, we encourage you to stay connected with our communication channels for regular updates and instructions.
+            Take care of yourself and your loved ones. We will continue to provide updates as the situation progresses. Stay strong and have faith.
+          </p>
+        </div>
+  
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="./Images/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Never Underestimate the Impact of a Disaster.
+          </h5>
+          <p>
+            Dear Residents of the Orange Zone,we want to reassure you that there are currently light chances that you may be directly affected by the ongoing disaster.The Orange Zone, has been identified as having relatively lower chances of being directly impacted by the disaster.Even though the likelihood of direct impact is low, it is still important to remain vigilant and be prepared for any unexpected changes. We strongly encourage you to stay informed through official channels and pay attention to updates from local authorities.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="./Images/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            PLAN   .   PREPARE   .   EVACUATE
+          </h5>
+          <p>
+            We write to you with grave concern and a heavy heart as we inform you about the imminent threat of a disaster that poses a significant risk to your safety and well-being. Our latest assessments and forecasts indicate that your area, designated as a red zone, is at high risk of being directly affected by this calamity.It is our utmost priority to ensure that you are well-informed and prepared to face the challenges ahead. While we understand that this news may cause anxiety and distress, we strongly urge you to take immediate action to safeguard yourself and your loved ones. Please consider the following urgent measures:
+            1.Evacuation 2.Emergency shelter 3.Emergency supplies 4.Stay Informed 5. Support Network
+          </p>
+        </div>
+      </div>
+    </section>
+  
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Precautions</h2>
+        <h3 class="section__header">
+          A little bit of awareness can save Hundreds of life.
+        </h3>
+      </div>
+  
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h5 class="testimonial__header">What are precautions that should be taken during the earthquake?</h5>
+            <blockquote class="testimonial__text">
+  
+              Precautions that should be taken during the earthquake are -<br>
+              1. Stay calm! If you're indoors, stay inside. If you're outside, stay outside.<br>
+              2. If you're indoors, stand against a wall near the center of the building, stand in a doorway, or crawl
+              under heavy furniture (a desk or table). Stay away from windows and outside doors.<br>
+              3. Stay away from tall and heavy objects that may fall on you.<br>
+              4. If you are in bed, do not get up. Protect your head with a pillow.<br>
+              5. If you're outdoors, stay in the open away from power lines or anything that might fall. Stay away from
+              buildings (stuff might fall off the building or the building could fall on you).<br>
+              6. Don't use matches, candles, or any flame. Broken gas lines and fire don't mix.<br>
+              7. If you're in a car, stop the car and stay inside the car until the earthquake stops. <br>
+              8. Don't use elevators (they'll probably get stuck anyway).
+  
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="./Images/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Earthquake</h6>
+              <p class="testimonial__location">Gujurat, 2001</p>
+            </address>
+          </div>
+        </div>
+  
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              What are precautions that should be taken during the flood?
+            </h5>
+            <blockquote class="testimonial__text">
+              Before
+              1. Ignore rumours, stay calm, don’t panic.<br>
+              2. Keep your mobile phones charged for emergency communication; use
+              SMS.<br>
+              3. Listen to radio, watch TV, read newspapers for weather updates.<br>
+              4. Keep cattle/animals untied to ensure their safety.<br>
+              5. Prepare an emergency kit with essential items for safety and survival.<br>
+              6. Keep your documents and valuables in water-proof bags.<br>
+              7. Know the safe routes to nearest shelter/raised pucca house.<br>
+              8. Evacuate immediately to safe places when directed by government<br>
+              officials.<br>
+              9. Store enough ready-to-eat food and water for at least a week.<br>
+              10. Be aware of flash flood areas such as canals, streams, drainage channels
+              During<br>
+              11. Don’t enter floodwaters. In case you need to, wear suitable footwear.<br>
+              12. Stay away from sewerage lines, gutters, drains, culverts, etc.<br>
+              13. Stay away from electric poles and fallen power lines to avoid electrocution.<br>
+              14. Mark any open drains or manholes with visible signs (red flags or
+              barricades).<br>
+              15. Do not walk or drive in the flood waters. Remember, two feet of moving
+              flood water can wash away big cars as well.<br>
+              16. Eat freshly cooked or dry food. Keep your food covered.<br>
+              17. Drink boiled/chlorinated water.<br>
+              18. Use disinfectants to keep your surroundings clean.<br>
+  
+              After
+              1. Do not allow children to play in or near flood waters.<br>
+              2. Don’t use any damaged electrical goods, get them checked.<br>
+              3. If instructed, turn off utilities at main switches and unplug appliances - do
+              not touch electrical equipment if wet.<br>
+              4. Watch out for broken electric poles and wires, sharp objects and debris.<br>
+              5. Do not eat food that has been in flood waters.<br>
+              6. Use mosquito nets to prevent malaria.<br>
+              7. Be careful of snakes as snake bites are common during floods.<br>
+              8. Don’t use the toilet or tap water if the water lines / sewage pipes are<br>
+              damaged.<br>
+              9. Do not drink tap water until advised by the Health Department that the
+              water is safe to drink..<br>
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="./Images/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Flood</h6>
+              <p class="testimonial__location">Kerala, 2019</p>
+            </address>
+          </div>
+        </div>
+  
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Dos and Dont's Cyclone
+            </h5>
+            <blockquote class="testimonial__text">
+              Dos
+              1. Check houses, secure loose tiles by cementing wherever necessary, repair
+              doors and windows.<br>
+              2. Check the area around the house. Remove dead or dying trees, anchor
+              removable objects like lumber piles, loose bricks, garbage cans, signboards, loose zinc sheets etc.<br>
+              3. Keep some wooden boards ready so that glass windows can be boarded.<br>
+              4. If you do not have wooden boards handy, paste paper strips on glasses to
+              prevent splinters flying into the house.<br>
+              5. Keep a hurricane Lantern filled with kerosene, flash light and enough dry
+              cells and keep them handy.<br>
+              6. Promptly demolish condemned buildings.<br>
+              7. Those who have radio sets should ensure that the radio is fully serviceable
+              In the case of transistors an extra set of batteries should be kept handy.<br>
+              8. Keep your radio on and listen to latest weather warnings and advisories
+              from the nearest AIR station. Pass the information to others.<br>
+              9. Pass only the official information you have got from the radio to others.<br>
+              10. Get away from low lying beaches or other locations which may be swept
+              by high tides or storm waves. Leave sufficiently early before your way to
+              high ground gets flooded. Do not delay and run the risk of being marooned.<br>
+              11. If your house is out of danger from high tides and flooding from the river,
+              and it is well built, it is then probably the best place. However, please act
+              promptly if asked to evacuate.<br>
+              12. Be alert for high water in areas where streams of rivers may flood due to
+              heavy rains.<br>
+              13. Get extra food, especially things which can be eaten without cooking or
+              with very little preparation. Store extra drinking water in suitably covered
+              vessel.<br>
+  
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="./Images/user-3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Cyclone</h6>
+              <p class="testimonial__location">Biparjoy, 2023</p>
+            </address>
+          </div>
+        </div>
+  
+  
+  
+  
+        <div class="slide slide--4">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              What to Do if a Landslide Is Likely to Hit Your Area?
+  
+            </h5>
+            <blockquote class="testimonial__text">
+              Shift to safer land.
+              Take all your valuables and documents with you.
+              Inform your neighbours and relatives residing in that area.
+              Take out your pets and vehicles to a safer place.
+              Evacuate the place.
+              In case escaping out is not possible, then protect your head.
+              Stay alert and awake to take an instant action in case of potential danger.
+              If you live in a landslide-prone area, make sure to plant sturdy vegetation on slopes which might help in
+              preventing erosion.
+              Watch out for any cracks on your building or any tilted poles/trees.
+              Don’ts
+              Don’t disobey the Government's instruction.
+              Try to avoid the predicted path of the landslide.
+              Report any assistance required for injured people to official rescue authorities.
+  
+              <b>Do's and Don'ts During a Landslide</b>
+              The primary thing to do is stop panicking and obeying Government instructions during the emergency period.
+  
+              What to Do During a Landslide?
+              If you stay in a landslide-prone area, then try to evacuate the place as early as possible.
+              Be aware of unusual cracking or rolling of huge stones.
+              Keep a watch on the water in the stream or channel. A rise in water level or transformation of colour from
+              clear to muddy can be alarming.
+              Stay out of the path of debris or landslides.
+              Keep watch on the road for mud blocks or debris overflow.
+              Try to connect with the local authority for relief or help.
+              Make your neighbours aware of the calamity.
+              Just take your necessary documents and valuables with you.
+              Prioritize your life more than your furniture at home or vehicles on the road.
+              What Not to Do During a Landslide?
+              Don't drive during the landslide.
+              Don’t cross any stream or flooding river.
+              Do not ignore damp areas or any mark of cracks on roads and buildings.
+              Do not get close to any loose electrical wiring or pole.
+              Avoid obstructing the path of a steep slope by placing waste materials or debris.
+  
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="./Images/user-4.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Landslide</h6>
+              <p class="testimonial__location">Manipur, 2022</p>
+            </address>
+          </div>
+        </div>
+  
+        <!-- <div class="slide"><img src="img/img-1.jpg" alt="Photo 1" /></div>
+          <div class="slide"><img src="img/img-2.jpg" alt="Photo 2" /></div>
+          <div class="slide"><img src="img/img-3.jpg" alt="Photo 3" /></div>
+          <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div>-->
+          <button class="slider__btn slider__btn--left">&larr;</button>
+          <button class="slider__btn slider__btn--right">&rarr;</button>
+          <div class="dots"></div>
+        </div>
+      </section>
+   
+      <section class="section section--sign-up">
+        <div class="section__title">
+          <h3 class="section__header">
+           Kindness is like Boomerang, always returns.
+          </h3>
+        </div>
+        
+        <button class="btn"><a target="_blank" href="/volunteer/volunteersForm.html">Register as partner 🤝</a></button>
+      </section>
+  
+      <footer class="footer">
+        <ul class="footer__nav">
+          <li class="footer__item">
+            <a class="footer__link" href="#">About</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Pricing</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Terms of Use</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Privacy Policy</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Careers</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Blog</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <img src="./Images/full_logo.png" alt="Logo" class="footer__logo" />
+        <p class="footer__copyright">
+          &copy; Copyright by
+          <a
+            class="footer__link twitter-link"
+            target="_blank"
+            href="https://www.linkedin.com/in/vinayaknawdhar/"
+            >BecauseLifeMatters</a
+          >
+          . Thanks for reading till end bud!
+        </p>
+      </footer>
+      <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">
+          Open your bank account <br />
+          in just <span class="highlight">5 minutes</span>
+        </h2>
+        <form class="modal__form">
+          <label>First Name</label>
+          <input type="text" />
+          <label>Last Name</label>
+          <input type="text" />
+          <label>Email Address</label>
+          <input type="email" />
+          <button class="btn">Next step &rarr;</button>
+        </form>
+      </div>
+  </div>
   <div class="preloader-container"><img class="preloader" src="./Images/preloader.gif" alt=""></div>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
     <script src="./index.js"></script>
-  </body>
+</body>
 </html>

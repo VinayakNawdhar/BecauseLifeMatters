@@ -1,4 +1,9 @@
-'use strict';
+// 'use strict';
+
+const scroll = new LocomotiveScroll({
+  el: document.querySelector('.main'),
+  smooth: true
+});
 window.addEventListener('load',function(){
   document.querySelector(".preloader").style.display = "none";
   document.querySelector(".preloader-container").style.display = "none";
@@ -57,7 +62,7 @@ for(let i=0;i<3;i++){
   navlinks[i].addEventListener('click',function(e){
     e.preventDefault();
     const id = this.getAttribute('href');
-    document.querySelector(id).scrollIntoView({behavior:"smooth"});
+    scroll.scrollTo(document.querySelector(id))
   })
 }
 
@@ -91,9 +96,9 @@ const handleHover = function(e){
     logo.style.opacity =this;
   }
 };
-
 navbar.addEventListener('mouseover',handleHover.bind(0.2));
 navbar.addEventListener('mouseout', handleHover.bind(1));
+
 const obsCallback = function(entries,observer){
   const [entry] = entries;
   if(!entry.isIntersecting){
