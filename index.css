@@ -783,3 +783,14 @@
   
   }
  }
+ .cursor{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: #32A5F5;
+  transition: all 0.1s ease;
+  z-index: -1;
+  mix-blend-mode: multiply;
+ }

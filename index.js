@@ -22,6 +22,7 @@ const navbar = document.querySelector('.nav');
 const allSections = document.querySelectorAll('.section');
 const allImages = section1.querySelectorAll('img');
 const dotContainer = document.querySelector('.dots');
+let circle = document.querySelector('.cursor');
 
 const openModal = function (e) {
   e.preventDefault();
@@ -211,3 +212,9 @@ document.addEventListener('DOMContentLoaded',function(){
   console.log('loaded');
 })
 
+document.addEventListener('mousemove', function(e) {
+  let left = e.pageX;
+  let top = e.pageY;
+  circle.style.left = left + 'px';
+  circle.style.top = top + 'px';
+});
