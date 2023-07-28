@@ -34,16 +34,7 @@
     line-height: 1.9;
     background-color: #e9dfdf;
   }
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 9rem;
-    width: 103.7%;
-    padding: 0 6rem;
-    z-index: 100;
-    background-color: #f3f3f3;
-  }
+  
   
   .nav.sticky {
     position: fixed;
