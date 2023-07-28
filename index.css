@@ -31,7 +31,6 @@
   html {
     font-size: 62.5%;
     box-sizing: border-box;
-    overflow-x: hidden;
   }
   
   body {
@@ -725,13 +724,14 @@
     overflow-x: hidden;
   }
   
-  .ember-view {
-    width: 20vw;
-    display: block;
-    margin: 0px 20px;
+  .twitter-box{
+    width: 1vw;
   }
   .twitter-handle{
     display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0px 80px;
   }
 
   .btn a{
