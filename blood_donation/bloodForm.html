@@ -1,9 +1,9 @@
-<html>
-  <head>
-    <title>DONATION FORM</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="images/images/logo.jpg" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Images/justlogo.jpg" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
     <link
@@ -18,144 +18,137 @@
     />
     <link rel=”stylesheet”
     href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
-    <link rel="stylesheet" href="/Public/index.css">
-    <link rel="stylesheet" href="/blood_donation/blood.css" />
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./blood.css" />
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
-    <script defer src="/blood_donation/blood.js"></script>
-  </head>
+    <title>Blood Donatation Form</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
 
-  <body>
-    <header class="header" style="margin-bottom: 50px;">
-      <nav class="nav">
-        <img src="/Images/full_logo.png" alt="Bankist logo" class="nav__logo" id="logo" />
-        <ul class="nav__links">
-          <li class="nav__item">
-            <a class="nav__link" href="/Public/index.html">News</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="/Public/index.html">Alerts</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="/Public/index.html">Precautions</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="/volunteer/volunteers.html" target="_blank">Volunteers</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="https://sachet.ndma.gov.in/" target="_blank">SACHET-NDMA</a>
-          </li>
-          </li>
-          <li class="nav__item">
-            <div class="btn-group">
-              <button type="button" class="btn-danger dropdown-toggle nav__link" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Supplies
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/map/map.html" target="_blank">Safe Homes</a></li>
-                <li><a class="dropdown-item" href="#">Medical</a></li>
-                <li><a class="dropdown-item" href="#">Grocery</a></li>
-                <li><a class="dropdown-item" href="#">Survival Kit</a></li>
-              </ul>
+*{
+  font-family: "Poppins";
+  font-size: 1.7rem;
+}
+    </style>
+</head>
+<body>
+        <h1>BLOOD DONATION FORM</h1>
+        <div class="contentform" style="width: 70VW;margin: auto;height: 60vh;">
+            <div class="leftcontact">
+              <div class="form-group">
+                <p>Name <span>*</span></p>
+                <span class="icon-case"
+                  ><i
+                    class="fa fa-user"
+                    style="font-size: 25px; padding-top: 20%"
+                  ></i
+                ></span>
+                <input
+                  type="text"
+                  name="prenom"
+                  id="Name"
+                  data-rule="required"
+                  class="name"
+                />
+                <div class="validation"></div>
+              </div>
+      
+              
+              <div class="form-group">
+                <p>Address <span>*</span></p>
+                <span class="icon-case"
+                  ><i
+                    class="fa fa-location-arrow"
+                    style="font-size: 25px; padding-top: 20%"
+                  ></i
+                ></span>
+                <input
+                  class="address"
+                  type="text"
+                  name="adresse"
+                  id="address"
+                  data-rule="required"
+                />
+                <div class="validation"></div>
+              </div>
+      
+              <div class="form-group">
+                <p>Tell us about Yourself..<span>*</span></p>
+                <span class="icon-case"
+                  ><i
+                    class="fas fa-user-edit"
+                    style="font-size: 25px; padding-top: 20%"
+                  ></i
+                ></span>
+                <textarea
+                  type="text"
+                  name="postal"
+                  id="data1"
+                  data-rule="required"
+                ></textarea>
+                <div class="validation"></div>
+              </div>
             </div>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link nav__link--btn" href="/donate/donation.html">Donate</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="/blood_donation/bloodForm.html" target="_blank"><img src="/Images/volunteer-img-2.png" alt=""></a>
-          </li>
-        </ul>
-      </nav>
-    <h1 style="color: rgb(39, 105, 197);">BLOOD DONATION</h1>
-    <img src="/Images/blood-donation-1.webp" alt="" class="donation-1">
-    <img src="/Images/donation-2.jpg" alt="" class="donation-2">
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <div class="blood-counter-container">
-      <h2>Blood Count</h2>
-      <div class="blood-counter">
-        <span>B+</span>
-        <div class="counter-border"><div class="counter bpos"></div></div><span class="bposper">10</span>
-      </div>
-      <div class="blood-counter">
-        <span>A+</span>
-        <div class="counter-border"><div class="counter apos"></div></div><span class="aposper">40</span>
-      </div>
-      <div class="blood-counter">
-        <span>A-</span>
-        <div class="counter-border"><div class="counter aneg"></div></div><span class="anegper">50</span>
-      </div>
-      <div class="blood-counter">
-        <span>O+</span>
-        <div class="counter-border"><div class="counter opos"></div></div><span class="oposper">90 %</span>
-      </div>
-      <div class="blood-counter">
-        <span>O-</span>
-        <div class="counter-border"><div class="counter oneg"></div></div><span class="onegper">10</span>
-      </div>
-      <div class="blood-counter">
-        <span>AB+</span>
-        <div class="counter-border"><div class="counter abpos"></div></div><span class="abposper">16</span>
-      </div>
-    </div>
-    <div class="buttons">
-    <button class="Donate"><a href="/blood_donation/blooddonate.html" target="_blank">Donate</a></button>
-    <button class="Require"><a href="/blood_donation/bloodRequire.html"target="_blank">Require</a></button>
-    </div>
-    <footer class="footer">
-      <ul class="footer__nav">
-        <li class="footer__item">
-          <a class="footer__link" href="#">About</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Pricing</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Terms of Use</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Privacy Policy</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Careers</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Blog</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Contact Us</a>
-        </li>
-      </ul>
-      <img src="/Images/full_logo.png" alt="Logo" class="footer__logo" />
-    </footer> 
-    <div class="preloader-container"><img class="preloader" src="/Images/preloader.gif" alt=""></div>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script>
-      function sendEmail(){
-      Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "varunkulkarni30@gmail.com",
-    Password : "93559108D269D41776040316BB06F4AB0135",
-    To : 'varunkulkarni30@gmail.com',
-    From : "varunkulkarni30@gmail.com",
-    Subject : "This is the subject",
-    Body : { "name:" : document.getElementById("Name").value ,
-        "email" : document.getElementById("email").value,
-        "sate": document.getElementById("country-state").value,
-
-    }
-
-      }).then(
-  message => alert(message)
-);}
-    </script>
-    
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"
-  ></script>
-  
-  </body>
+      
+            <div class="rightcontact" data-rule="required">
+              <!--- India states -->
+              <p>Blood group</p>
+              <select id="Blood group" class="blood group" name="country-state">
+                <option value="">Select Blood group</option>
+                <option value="AN">A+</option>
+                <option value="AP">A-</option>
+                <option value="AR">B+</option>
+                <option value="BR">AB+</option>
+                <option value="CT">O+</option>
+                <option value="DN">O-</option>
+                
+              </select>
+              <script>
+                function sendEmail(){
+                Email.send({
+              Host : "smtp.elasticemail.com",
+              Username : "varunkulkarni30@gmail.com",
+              Password : "93559108D269D41776040316BB06F4AB0135",
+              To : 'varunkulkarni30@gmail.com',
+              From : "varunkulkarni30@gmail.com",
+              Subject : "This is the subject",
+              Body : { "name:" : document.getElementById("Name").value ,
+                  "email" : document.getElementById("email").value,
+                  "address": document.getElementById("address").value,
+                  "Blood group" : document.getElementById("Blood group")
+          
+              }
+          
+                }).then(
+            message => alert(message)
+          );}
+              </script>
+              <div>
+                <div class="form-group">
+                  <p>Phone number <span>*</span></p>
+                  <span class="icon-case"
+                    ><i
+                      class="fa fa-phone"
+                      style="font-size: 25px; padding-top: 20%"
+                    ></i
+                  ></span>
+                  <input
+                    class="phno"
+                    type="text"
+                    name="phone"
+                    id="number"
+                    data-rule="maxlen:10"
+                    data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"
+                  />
+                  <div class="validation"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="bouton-contact"  onclick="sendEmail()"style="background-color: #049c04">
+            Donate
+          </button>
+          
+</body>
 </html>
