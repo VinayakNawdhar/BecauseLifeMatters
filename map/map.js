@@ -22,6 +22,7 @@ class Workout {
   }
 }
 
+const redZoneAreaMineBtn = document.querySelector('.red-zone-area-mine');
 const redZoneAreaForm = document.querySelector('.red-zone-area');
 const form = document.querySelector('.form');
 const containerWorkouts = document.querySelector('.workouts');
@@ -37,6 +38,7 @@ const redZoneAreaBtn = document.querySelector('.red-zone-area-btn');
 class App {
   #map;
   #mapEvent;
+  mapCircles=[];
   #events = [];
 
   constructor() {
@@ -59,8 +61,6 @@ class App {
     const { longitude } = position.coords;
     const coords = [latitude, longitude];
     this.#map = L.map('map').setView(coords, 7);
-    // let circle = L.circle(coords, {radius: 100000,color : "red"}).addTo(this.#map);
-    // let circle2 = L.circle([26.5866,74.8542], {radius: 100000,color: "red"}).addTo(this.#map);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution:
         '',
@@ -158,14 +158,20 @@ class App {
   }
 _setLocalStorage(){
   localStorage.setItem('vinayak',JSON.stringify(this.#events));
+  localStorage.setItem('red-zone-area',JSON.stringify(this.mapCircles))
 }
 _getLocalStorage(){
   if (localStorage.getItem('vinayak')) {
     this.#events = JSON.parse(localStorage.getItem('vinayak'));
-    // console.log(this.#events);
     for(let i=0;i<this.#events.length;i++){
       this._addField(this.#events[i]);
       this._renderWorkoutMarker(this.#events[i]);
+    }
+  }
+  if(localStorage.getItem('red-zone-area')){
+    this.mapCircles = JSON.parse(localStorage.getItem('red-zone-area'));
+    for(let i=0;i<this.mapCircles.length;i++){
+      this._createCircle(this.mapCircles[i].latitude,this.mapCircles[i].longitude,this.mapCircles[i].radius)
     }
   }
 }
@@ -174,7 +180,7 @@ reset(){
   location.reload();
 }
 _createCircle(latitude,longitude,radius){
-  L.circle([latitude,longitude], {radius: radius,color : "red"}).addTo(this.#map)
+  L.circle([latitude,longitude], {radius: radius*10000,color : "red"}).addTo(this.#map)
 }
 
 }
@@ -186,7 +192,6 @@ function clearFormField() {
   inputLocation.value = '';
   inputDuration.value = '';
   inputTiming.value = '';
-  // console.log(this.#events);
 }
 
 document.querySelector('.reset button').addEventListener('click',function(e){
@@ -205,10 +210,35 @@ redZoneAreaBtn.addEventListener('click',function(e){
   const longitude = document.querySelector('#red-zone-longtitude').value;
   const radius = document.querySelector('#red-zone-radius').value;
   if(latitude && longitude && radius){
-    app._createCircle(latitude,longitude,radius*10000)
+    app.mapCircles.push({
+      latitude : latitude,
+      longitude : longitude,
+      radius : radius
+    })
+    app._createCircle(latitude,longitude,radius)
     redZoneAreaForm.classList.toggle('hidden');
+    app._setLocalStorage();
   }else{
     alert('Enter complete details')
   }
   
+})
+
+redZoneAreaMineBtn.addEventListener('click',function(e){
+  e.preventDefault();
+  if(navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(function(position){
+      const coords = position.coords;
+      app.mapCircles.push({
+        latitude : coords.latitude,
+        longitude : coords.longitude,
+        radius : 10
+      })
+      app._createCircle(coords.latitude,coords.longitude,10)
+      redZoneAreaForm.classList.toggle('hidden');
+      app._setLocalStorage();
+    })
+  }else{
+    alert('Unable to get your location')
+  }
 })

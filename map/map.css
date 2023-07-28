@@ -284,3 +284,16 @@ a:visited {
   box-sizing: border-box;
   padding-left: 70px;
 }
+.red-zone-area-mine{
+  position: relative;
+  left: 87px;
+  bottom: 8px;
+  font-size: 1vw;
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.red-zone-area-mine:hover{
+  font-size: 1.2vw;
+}
