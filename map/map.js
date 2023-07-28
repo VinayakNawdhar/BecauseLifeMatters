@@ -1,10 +1,13 @@
 'use strict';
 
 // prettier-ignore
-window.addEventListener('load',function(){
-  document.querySelector(".preloader").style.display = "none";
-  document.querySelector(".preloader-container").style.display = "none";
-})
+// window.addEventListener('load',function(){
+//   document.querySelector(".preloader").style.display = "none";
+//   document.querySelector(".preloader-container").style.display = "none";
+// })
+
+document.querySelector(".preloader").style.display = "none";
+document.querySelector(".preloader-container").style.display = "none";
 
 class Workout {
   date = new Date();
@@ -19,7 +22,7 @@ class Workout {
   }
 }
 
-
+const redZoneAreaForm = document.querySelector('.red-zone-area');
 const form = document.querySelector('.form');
 const containerWorkouts = document.querySelector('.workouts');
 const inputTask = document.querySelector('.form__input--task');
@@ -28,6 +31,8 @@ const inputDuration = document.querySelector('.form__input--duration');
 const inputTiming = document.querySelector('.form__input--timing');
 const formBtn = document.querySelector('.form__btn');
 const workouts = document.querySelector('.workouts');
+const addRedZoneBtn = document.querySelector('.add-red-zone-btn');
+const redZoneAreaBtn = document.querySelector('.red-zone-area-btn');
 
 class App {
   #map;
@@ -54,10 +59,11 @@ class App {
     const { longitude } = position.coords;
     const coords = [latitude, longitude];
     this.#map = L.map('map').setView(coords, 7);
-
+    // let circle = L.circle(coords, {radius: 100000,color : "red"}).addTo(this.#map);
+    // let circle2 = L.circle([26.5866,74.8542], {radius: 100000,color: "red"}).addTo(this.#map);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        '',
     }).addTo(this.#map);
 
     this.#map.on('click', this._showForm.bind(this));
@@ -107,8 +113,8 @@ class App {
           maxWidth: 200,
           minWidth: 100,
           autoClose: false,
-          closeOnClick: false,
-          closeButton: false,
+          closeOnClick: true,
+          closeButton: true,
           className: popup,
         }).setContent(
           (eventsObj.duration).toUpperCase()
@@ -167,6 +173,9 @@ reset(){
   localStorage.clear();
   location.reload();
 }
+_createCircle(latitude,longitude,radius){
+  L.circle([latitude,longitude], {radius: radius,color : "red"}).addTo(this.#map)
+}
 
 }
 
@@ -183,4 +192,23 @@ function clearFormField() {
 document.querySelector('.reset button').addEventListener('click',function(e){
   e.preventDefault();
   app.reset();
+})
+
+addRedZoneBtn.addEventListener('click',(e)=>{
+  e.preventDefault();
+  redZoneAreaForm.classList.toggle('hidden');
+})
+
+redZoneAreaBtn.addEventListener('click',function(e){
+  e.preventDefault();
+  const latitude = document.querySelector('#red-zone-latitude').value;
+  const longitude = document.querySelector('#red-zone-longtitude').value;
+  const radius = document.querySelector('#red-zone-radius').value;
+  if(latitude && longitude && radius){
+    app._createCircle(latitude,longitude,radius*10000)
+    redZoneAreaForm.classList.toggle('hidden');
+  }else{
+    alert('Enter complete details')
+  }
+  
 })
