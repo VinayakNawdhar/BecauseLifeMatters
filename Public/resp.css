@@ -1,0 +1,11 @@
+@media only screen and (max-width: 1326px){
+    .nav{
+        padding: 0px 1vw;
+    }
+    .nav__logo{
+        height: 5vw;
+    }
+    .nav__item {
+        margin-left: 2rem;
+    }
+}

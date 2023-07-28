@@ -4,10 +4,12 @@ const scroll = new LocomotiveScroll({
   el: document.querySelector('.main'),
   smooth: true
 });
-window.addEventListener('load',function(){
-  document.querySelector(".preloader").style.display = "none";
-  document.querySelector(".preloader-container").style.display = "none";
-})
+// window.addEventListener('load',function(){
+//   document.querySelector(".preloader").style.display = "none";
+//   document.querySelector(".preloader-container").style.display = "none";
+// })
+document.querySelector(".preloader").style.display = "none";
+document.querySelector(".preloader-container").style.display = "none";
 // Modal Window
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
