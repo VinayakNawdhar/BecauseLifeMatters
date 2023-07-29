@@ -77,6 +77,27 @@
         <img src="./Images/full_logo.png" class="header__img" alt="Minimalist bank items" />
       </div>
       <button class="Subscribe-btn"><a href="./Public/subsribe.html" target="_blank" class="highlight">Subscribe to Alerts!</a></button>
+      <div class="weather reveal">
+        <h3 class="city-name">Bangalore</h3>
+        <div class="weather-container">
+            <div class="weather-temp">
+                <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="">
+                <span>
+                    <h4 class="temp">24°C</h4>
+                <p class="weather-condition">Partly Cloudy</p>
+                </span>
+            </div>
+            <div class="weather-time">
+                <h5>Last Updated :</h5>
+                <p class="date">24</p>
+                <p class="month">Jun</p>
+                <p class="year">2023</p>
+                <p class="time">10:30 AM</p>
+                <img src="../Images/repeat-symbol.png" alt="">
+            </div>  
+        </div>
+    </div>
+    </div>
     </header>
     <div class="up-arrow ">
       <img src="./Images/up-arrow.png" id='my' data-scroll data-scroll-sticky alt="">
@@ -530,7 +551,7 @@
           . Thanks for reading till end bud!
         </p>
       </footer>
-      <div class="modal hidden">
+      <!-- <div class="modal hidden">
         <button class="btn--close-modal">&times;</button>
         <h2 class="modal__header">
           Open your bank account <br />
@@ -545,7 +566,7 @@
           <input type="email" />
           <button class="btn">Next step &rarr;</button>
         </form>
-      </div>
+      </div> -->
       
   </div>
   <div class="preloader-container"><img src="./Images/justlogo.png" class="preloader preloader-1" alt=""><img class="preloader preloader-2" src="./Images/preloader.gif" alt=""></div>
@@ -556,6 +577,8 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./weather/weather.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>

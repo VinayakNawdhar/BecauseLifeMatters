@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
 
 .container_1{
   display: flex;
@@ -5,6 +6,7 @@
   justify-content: center;
   gap: 200px;
 }
+
 :root {
     --color-primary: #5ec576;
     --color-secondary: #ffcb03;
@@ -822,3 +824,81 @@
   background-color: #0A93E2;
   src: './Images/up-arrow-white.png';
  }
+
+ /* Weather  */
+ .weather{
+  font-family: 'Poppins';
+  width: 350px;
+  height: 23vh;
+  background-image: url('../Images/cloudy.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(254, 254, 254);
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.737);
+  position: relative;
+  left: 23vw;
+  bottom: 34vh;
+  transition: all 1s ease;
+}
+.weather.reveal{
+  transform: translateY(-10px);
+  opacity: 0;
+}
+.weather p{
+  font-family: 'Poppins';
+  color: white;
+  font-size: 16px;
+}
+.weather h3{
+  font-size: 2vw;
+}
+.weather-container{
+  display: flex;
+  flex-direction: column;
+}
+.weather-time>img{
+  width: 20px;
+  margin-left:5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.weather-time>img:hover{
+  transform: translateY(2px);
+}
+.weather-time {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather-temp{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+.weather-temp p{
+  margin-top: 0px;
+}
+.weather-time p{
+  margin: 0px 1.5px;
+}
+.weather-time h5{
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+  font-size: 17px;
+}
+.weather-temp img{
+  margin-right: 30px;
+}
+.temp{
+  margin-top: 10px;
+  margin-bottom: 0px;
+}

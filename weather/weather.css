@@ -48,6 +48,7 @@
 .weather-time p{
     margin: 0px 1.5px;
     font-size: 14px;
+    color: white;
 }
 .weather-temp img{
     margin-right: 30px;

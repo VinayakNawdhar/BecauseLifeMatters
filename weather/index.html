@@ -8,13 +8,13 @@
 </head>
 <body>
     <div class="weather">
-        <h3>Bangalore</h3>
+        <h3 class="city-name">Bangalore</h3>
         <div class="weather-container">
             <div class="weather-temp">
                 <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="">
                 <span>
-                    <h4>24°C</h4>
-                <p>Partly Cloudy</p>
+                    <h4 class="temp">24°C</h4>
+                <p class="weather-condition">Partly Cloudy</p>
                 </span>
             </div>
             <div class="weather-time">
@@ -24,9 +24,10 @@
                 <p class="year">2023</p>
                 <p class="time">10:30 AM</p>
                 <img src="../Images/repeat-symbol.png" alt="">
-            </div>
-            
+            </div>  
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./weather.js"></script>
 </body>
 </html>
