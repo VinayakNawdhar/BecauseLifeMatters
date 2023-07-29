@@ -28,21 +28,7 @@ const handleHover = function(e){
 
 navbar.addEventListener('mouseover',handleHover.bind(0.2));
 navbar.addEventListener('mouseout', handleHover.bind(1));
-const obsCallback = function(entries,observer){
-  const [entry] = entries;
-  if(!entry.isIntersecting){
-    navbar.classList.add('sticky');
-  }else{
-    navbar.classList.remove('sticky');
-  }
-}
-const obsOption = {
-  root : null,
-  threshold : [0],
-  rootMargin : '-90px'
-}
-const observer = new IntersectionObserver(obsCallback,obsOption);
-observer.observe(header);
+
 
 // Finishing
 document.addEventListener('DOMContentLoaded',function(){
