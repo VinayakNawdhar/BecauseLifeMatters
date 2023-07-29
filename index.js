@@ -115,11 +115,12 @@ navbar.addEventListener('mouseout', handleHover.bind(1));
 
 const obsCallback = function(entries,observer){
   const [entry] = entries;
-  console.log(entry);
   if(!entry.isIntersecting){
     navbar.classList.add('sticky');
+    upArrowImage.classList.remove('hidden')
   }else{
     navbar.classList.remove('sticky');
+    upArrowImage.classList.add('hidden')
   }
 }
 const obsOption = {
