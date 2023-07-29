@@ -65,12 +65,11 @@ class App {
       attribution:
         '',
     }).addTo(this.#map);
-
+    
     this.#map.on('click', this._showForm.bind(this));
     this._getLocalStorage();
     workouts.addEventListener('click', this._setViewFunction.bind(this));
   }
-
   _showForm(ev) {
     form.classList.toggle('hidden');
     inputTask.focus();
@@ -106,7 +105,7 @@ class App {
     if(eventsObj.duration.toLowerCase() == 'home'){
       popup = "cycling-popup";
     }
-    L.marker([eventsObj.event.lat, eventsObj.event.lng])
+    let marker = L.marker([eventsObj.event.lat, eventsObj.event.lng])
       .addTo(this.#map)
       .bindPopup(
         L.popup({
