@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./weather.css" />
+  </head>
+  <body>
+    <div class="weather">
+      <div
+        class="col-xs-12 col-md-12"
+        style="
+          text-align: center;
+          height: 780px;
+          background-image: url('/Images/cloudy.jpg');
+        "
+      >
+        <div
+          class=""
+          style="padding-left: 10px; padding-right: 10px; padding-top: 5px"
+        >
+        <div
+          style="
+            margin-top: 8px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 0px 0px 0px,
+              rgba(0, 0, 0, 0.23) 0px 1px 1px 0px;
+            background: rgba(41, 97, 173, 0.39);
+            color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+          "
+        >
+          <div>
+            <div style="padding: 5px">
+              <div>
+                <div class="row">
+                  <div class="col-xs-5 col-sm-5 col-md-5">
+                    <div
+                      class="col-xs-4 col-sm-4 col-md-4"
+                      style="margin-top: 10px"
+                    >
+                      <img
+                        src="//cdn.weatherapi.com/weather/64x64/night/116.png"
+                        alt="Partly cloudy"
+                        class=""
+                        style="height: 55px; width: 45px; margin-top: -7px"
+                      />
+                    </div>
+                    <div class="col-xs-8 col-md-8" style="margin-top: 10px">
+                      <div
+                        class="col-xs-12 col-md-12"
+                        style="font-size: 30px; font-weight: bold"
+                      >
+                        24°C
+                      </div>
+                    </div>
+                    <div
+                      class="col-xs-12 col-md-12 col-lg-12 nopadding"
+                      style="margin-top: -4px; margin-left: 30px"
+                    >
+                      <strong style="text-align: left">Partly Cloudy</strong>
+                    </div>
+                  </div>
+                  <div
+                    class="col-xs-7 col-sm-7 col-md-6 col-md-offset-1"
+                    style="text-align: initial"
+                  >
+                    <div
+                      class="col-xs-12 col-md-12 nopadding"
+                      style="text-align: center"
+                    >
+                      <div
+                        class="col-xs-12 col-md-12"
+                        style="width: 100%; text-align: center"
+                      >
+                        <div id="aqi" style="height: 70px; width: 150px">
+                          <svg width="150" height="67.5">
+                            <g transform="translate(21.5, 3.5)">
+                              <g
+                                class="doughnut"
+                                transform="translate(53.5, 53.5)"
+                              >
+                                <g class="arc">
+                                  <path
+                                    d="M-52.338226353076585,-3.118259609849714A1,1,0,0,1,-53.33514495027804,-4.196702650037327A53.5,53.5,0,0,1,-48.28794176648477,-23.033121368077232A1,1,0,0,1,-46.88536341570935,-23.468621138813493L-30.001834552177897,-13.720911204582777A1,1,0,0,1,-29.5803289765834,-12.466520670864853A32.1,32.1,0,0,0,-31.850576681454598,-3.9938408905189093A1,1,0,0,1,-32.842806484615174,-3.118259609849722Z"
+                                    style="fill: rgb(0, 255, 0)"
+                                  ></path>
+                                </g>
+                                <g class="arc">
+                                  <path
+                                    d="M-43.76710380585965,-28.86960521426309A1,1,0,0,1,-44.091239116447454,-30.302023582200814A53.5,53.5,0,0,1,-30.302023582200825,-44.09123911644745A1,1,0,0,1,-28.869605214263103,-43.76710380585964L-19.12189528003241,-26.88357494232817A1,1,0,0,1,-19.384056010589752,-25.58648808606448A32.1,32.1,0,0,0,-25.58648808606449,-19.384056010589735A1,1,0,0,1,-26.883574942328178,-19.121895280032394Z"
+                                    style="fill: rgb(102, 255, 0)"
+                                  ></path>
+                                </g>
+                                <g class="arc">
+                                  <path
+                                    d="M-23.46862113881351,-46.88536341570935A1,1,0,0,1,-23.033121368077246,-48.287941766484764A53.5,53.5,0,0,1,-4.196702650037347,-53.33514495027805A1,1,0,0,1,-3.1182596098497273,-52.338226353076585L-3.1182596098497237,-32.842806484615174A1,1,0,0,1,-3.9938408905189164,-31.850576681454594A32.1,32.1,0,0,0,-12.466520670864867,-29.58032897658339A1,1,0,0,1,-13.720911204582785,-30.001834552177893Z"
+                                    style="fill: rgb(204, 255, 0)"
+                                  ></path>
+                                </g>
+                                <g class="arc">
+                                  <path
+                                    d="M3.1182596098497095,-52.338226353076585A1,1,0,0,1,4.196702650037323,-53.33514495027804A53.5,53.5,0,0,1,23.033121368077218,-48.28794176648478A1,1,0,0,1,23.46862113881348,-46.88536341570936L13.720911204582777,-30.0018345521779A1,1,0,0,1,12.466520670864853,-29.580328976583402A32.1,32.1,0,0,0,3.9938408905189076,-31.850576681454598A1,1,0,0,1,3.118259609849713,-32.842806484615174Z"
+                                    style="fill: rgb(255, 204, 0)"
+                                  ></path>
+                                </g>
+                                <g class="arc">
+                                  <path
+                                    d="M28.8696052142631,-43.76710380585964A1,1,0,0,1,30.302023582200825,-44.09123911644744A53.5,53.5,0,0,1,44.09123911644743,-30.302023582200835A1,1,0,0,1,43.76710380585963,-28.869605214263114L26.883574942328178,-19.1218952800324A1,1,0,0,1,25.586488086064488,-19.384056010589745A32.1,32.1,0,0,0,19.384056010589735,-25.58648808606449A1,1,0,0,1,19.121895280032394,-26.883574942328185Z"
+                                    style="fill: rgb(255, 102, 0)"
+                                  ></path>
+                                </g>
+                                <g class="arc">
+                                  <path
+                                    d="M46.88536341570935,-23.468621138813496A1,1,0,0,1,48.287941766484764,-23.033121368077232A53.5,53.5,0,0,1,53.33514495027804,-4.196702650037355A1,1,0,0,1,52.338226353076585,-3.1182596098497406L32.842806484615174,-3.1182596098497317A1,1,0,0,1,31.850576681454594,-3.993840890518924A32.1,32.1,0,0,0,29.58032897658339,-12.46652067086486A1,1,0,0,1,30.001834552177897,-13.720911204582787Z"
+                                    style="fill: rgb(255, 0, 0)"
+                                  ></path>
+                                </g>
+                              </g>
+                              <g
+                                class="needle"
+                                transform="translate(53.5, 53.5)"
+                              >
+                                <path
+                                  d="M -0.3557973460305105 2.009341117029849 L -29.31123144903785 -4.610021458505618 L 0.35579734603051 -6.05934111702985"
+                                  fill="#fff"
+                                ></path>
+                                <circle
+                                  cx="0"
+                                  cy="-2.0250000000000004"
+                                  r="4.050000000000001"
+                                  fill="#464A4F"
+                                ></circle>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <div
+                          style="
+                            text-align: left;
+                            font-weight: bold;
+                            font-size: 13px;
+                            margin-left: 45px;
+                            margin-top: -6px;
+                          "
+                        >
+                          AQI :14
+                        </div>
+                        <div
+                          style="
+                            text-align: left;
+                            font-weight: bold;
+                            font-size: 13px;
+                            margin-left: 45px;
+                          "
+                        >
+                          Good
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-12" style="display: flex">
+                    <small style="color: rgb(222, 225, 230); margin-top: 2px">
+                      <svg
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-q42b8s"
+                        focusable="false"
+                        aria-hidden="true"
+                        viewBox="0 0 24 24"
+                        data-testid="LocationOnIcon"
+                      >
+                        <path
+                          d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                        ></path></svg
+                    ></small>
+                  <div class = "cityname_holder"style="margin-left: 10px; color: rgb(222, 225, 230)">
+                      Bengaluru
+                    </div>
+                  </div>
+                  <div
+                    class="col-xs-12 col-md-12"
+                    style="display: flex; margin-top: 2px"
+                  >
+                    <div style="color: rgb(222, 225, 230)">
+                      <strong>Last Updated:</strong>
+                    </div>
+                    <div class="datentime_holder" style="margin-left: 10px; color: rgb(222, 225, 230)">
+                      24 Jun 2023 12:18AM
+                    </div>
+                    <div style="margin-left: 10px; color: rgb(222, 225, 230)">
+                      <svg
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                        focusable="false"
+                        aria-hidden="true"
+                        viewBox="0 0 24 24"
+                        data-testid="RefreshIcon"
+                        style="height: 20px; width: 20px; margin-top: -2px"
+                      >
+                        <path
+                          d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            margin-top: 6px;
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 0px 0px 0px,
+              rgba(0, 0, 0, 0.23) 0px 1px 1px 0px;
+            border-radius: 10px;
+            background: rgba(41, 97, 173, 0.39);
+          "
+        >
+          <div style="padding-bottom: 0px">
+            <div style="text-align: left; padding: 3px">
+              <div class="row">
+                <div class="col-xs-5 col-md-5 col-md-offset-2 col-xs-offset-2">
+                  <small>Precipitation</small>
+                </div>
+                <div class="col-xs-5 col-md-5"><small>SW Wind</small></div>
+              </div>
+              <div class="row" style="font-weight: bold; margin-top: 2px">
+                <div class="col-xs-5 col-md-5 col-md-offset-2 col-xs-offset-2">
+                  <p>0.16 in</p>
+                </div>
+                <div class="col-xs-5 col-md-5"><p>16.9 kph</p></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5 col-md-5 col-md-offset-2 col-xs-offset-2">
+                  <small>Pressure</small>
+                </div>
+                <div class="col-xs-5 col-md-5"><small>UV</small></div>
+              </div>
+              <div class="row" style="font-weight: bold; margin-top: 2px">
+                <div class="col-xs-5 col-md-5 col-md-offset-2 col-xs-offset-2">
+                  <p>1014 mb</p>
+                </div>
+                <div class="col-xs-5 col-md-5"><p>1</p></div>
+              </div>
+            </div>
+          </div>
+      
+      </div>
+      </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="weather.js"></script>
+</html>

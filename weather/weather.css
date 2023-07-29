@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.weather{
+    font-family: 'Poppins';
+    width: 300px;
+    height: 20vh;
+    background-image: url('../Images/cloudy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+}
+.weather h3{
+    font-size: 2vw;
+}
+.weather-container{
+    display: flex;
+    flex-direction: column;
+}
+.weather-time>img{
+    width: 20px;
+    margin-left:5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.weather-time>img:hover{
+    transform: translateY(2px);
+}
+.weather-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather-time h5{
+    margin-right: 10px;
+}
+.weather-temp{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+.weather-time p{
+    margin: 0px 1.5px;
+    font-size: 14px;
+}
+.weather-temp img{
+    margin-right: 30px;
+}

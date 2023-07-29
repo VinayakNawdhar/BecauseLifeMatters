@@ -233,3 +233,25 @@ document.addEventListener('mousemove', function(e) {
   circle.style.left = left + 'px';
   circle.style.top = top + 'px';
 });
+
+// Inventory Chart
+const ctx = document.getElementById('myChart');
+        new Chart(ctx, {
+          responsive : true,
+          type: 'pie',
+          data: {
+            labels: ['Medics', 'Food', 'Survival kits'],
+            datasets: [{
+              label: 'Quantity',
+              data: [20, 40, 15,],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
