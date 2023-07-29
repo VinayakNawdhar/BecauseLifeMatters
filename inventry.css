@@ -1,0 +1,39 @@
+
+
+  table {
+    width: 500px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    margin-left: 13rem;
+  }
+
+  th,
+  td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #f2f2f2;
+    
+  }
+
+  th {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+
+  tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .chart{
+    width:80rem;
+    height: 35rem;
+    margin-left: 50rem;
+    background-color: #fff;
+}
+
+ 
+
+
