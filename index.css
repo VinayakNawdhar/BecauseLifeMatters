@@ -37,6 +37,7 @@
     font-size: 62.5%;
     box-sizing: border-box;
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
   
   body {
@@ -168,7 +169,7 @@
   
   .nav__logo {
     height: 10rem;
-    transition: all 0.3s;
+    transition: all 0.8s;
   }
   
   .nav__links {
