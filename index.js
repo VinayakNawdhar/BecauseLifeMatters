@@ -1,9 +1,8 @@
-// 'use strict';
 
-const scroll = new LocomotiveScroll({
-  el: document.querySelector('.main'),
-  smooth: true
-});
+// const scroll = new LocomotiveScroll({
+//   el: document.querySelector('.main'),
+//   smooth: true
+// });
 // window.addEventListener('load',function(){
 //   document.querySelector(".preloader").style.display = "none";
 //   document.querySelector(".preloader-container").style.display = "none";
@@ -24,7 +23,19 @@ const navbar = document.querySelector('.nav');
 const allSections = document.querySelectorAll('.section');
 const allImages = section1.querySelectorAll('img');
 const dotContainer = document.querySelector('.dots');
-let circle = document.querySelector('.cursor');
+const circle = document.querySelector('.cursor');
+const upArrowImage = document.querySelector('.up-arrow img');
+
+upArrowImage.addEventListener('mouseover',function(){
+  upArrowImage.src = "./Images/up-arrow-white.png"
+})
+upArrowImage.addEventListener('mouseleave',function(){
+  upArrowImage.src = "./Images/up-arrow.png"
+})
+upArrowImage.addEventListener('click',function(e){
+  header.scrollIntoView({behavior:"smooth"})
+})
+
 
 const openModal = function (e) {
   e.preventDefault();
@@ -65,7 +76,7 @@ for(let i=0;i<3;i++){
   navlinks[i].addEventListener('click',function(e){
     e.preventDefault();
     const id = this.getAttribute('href');
-    scroll.scrollTo(document.querySelector(id))
+    document.querySelector(id).scrollIntoView({behavior:"smooth"})
   })
 }
 
@@ -104,6 +115,7 @@ navbar.addEventListener('mouseout', handleHover.bind(1));
 
 const obsCallback = function(entries,observer){
   const [entry] = entries;
+  console.log(entry);
   if(!entry.isIntersecting){
     navbar.classList.add('sticky');
   }else{
