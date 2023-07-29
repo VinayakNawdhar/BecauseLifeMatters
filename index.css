@@ -31,6 +31,7 @@
   html {
     font-size: 62.5%;
     box-sizing: border-box;
+    overflow-x: hidden;
   }
   
   body {
@@ -142,6 +143,7 @@
     padding: 0 6rem;
     z-index: 100;
     /* border: 2px solid black; */
+    transition: all 0.4s ease;
   }
   .nav__link img{
     height: 5rem;
@@ -793,4 +795,20 @@
   transition: all 0.1s ease;
   z-index: -1;
   mix-blend-mode: multiply;
+ }
+
+ .up-arrow img{
+    src: './Images/up-arrow-white.png';
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 2px solid #0A93E2;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    z-index: 20;
+ }
+ .up-arrow img:hover{
+  background-color: #0A93E2;
+  src: './Images/up-arrow-white.png';
  }
