@@ -742,11 +742,15 @@
   }
 
   .preloader{
-    position: relative;
-    left: 45%;
-    top: 35%;
+    position: absolute;
+    left: 22%;
+    top: 10%;
     z-index: 2000;
-  
+  }
+  .preloader-1{
+    height: 12%;
+    left: 48.1%;
+    top: 43.8%;
   }
   .preloader-container{
     position: absolute;
