@@ -830,7 +830,7 @@
   font-family: 'Poppins';
   width: 350px;
   height: 23vh;
-  background-image: url('../Images/cloudy.jpg');
+  background-image: url('./Images/cloudy.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   color: rgb(254, 254, 254);
